@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = '列表';
+$labels['mailman_my_lists'] = '我的清单';
+$labels['mailman_available_lists'] = '可用列表';
+$labels['mailman_debug_title'] = '诊断';
+$labels['mailman_select_list'] = '选择邮件列表，查看其详细信息。';
+$labels['mailman_no_lists'] = '未找到您的活动身份已订阅的列表。';
+$labels['mailman_no_directory_lists'] = '目前没有可浏览的列表。';
+$labels['mailman_archives'] = '档案';
+$labels['mailman_subscribe'] = '订阅';
+$labels['mailman_unsubscribe'] = '取消订阅';
+$labels['mailman_send_to_list'] = '发送至列表';
+$labels['mailman_actions_unavailable'] = '列表操作目前不可用。';
+$labels['mailman_status_ok'] = '可以联系到邮件员。';
+$labels['mailman_status_degraded'] = 'Mailman 不可用。读写操作受到限制。';
+$labels['mailman_not_configured'] = '未配置 Mailman 集成。';
+$labels['mailman_subscribe_success'] = '订阅申请已完成。';
+$labels['mailman_subscribe_failed'] = '无法订阅该列表。';
+$labels['mailman_subscribe_unavailable'] = '订阅已禁用或当前不可用。';
+$labels['mailman_unsubscribe_success'] = '退订名单';
+$labels['mailman_unsubscribe_failed'] = '无法取消订阅该列表。';
+$labels['mailman_unsubscribe_unavailable'] = '退订操作已禁用或当前不可用。';
+$labels['mailman_no_identity'] = '未找到可用的发件人身份。';
+$labels['mailman_compose_widget_empty'] = '未识别 Mailman 列表收件人。';
+$labels['mailman_detection_disabled'] = 'Mailman 撰写检测已禁用。';
+$labels['invalidrequest'] = '无效请求。';
+$labels['mailman_template_none'] = '无模板';
+$labels['mailman_owner_tools_title'] = '列出发送选项';
+$labels['mailman_owner_target_prefix'] = '发送至';
+$labels['mailman_owner_option_require_subject'] = '发送前要求输入主题';
+$labels['mailman_owner_option_confirm_send'] = '发送前显示确认';
+$labels['mailman_owner_option_append_footer'] = '添加取消订阅页脚';
+$labels['mailman_owner_preflight_missing_subject'] = '请在发送至列表前添加主题。';
+$labels['mailman_owner_preflight_confirm_send'] = '将此信息发送给选定的列表收件人？';
+?>

@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'القوائم';
+$labels['mailman_my_lists'] = 'قوائمي';
+$labels['mailman_available_lists'] = 'القوائم المتاحة';
+$labels['mailman_debug_title'] = 'التشخيص';
+$labels['mailman_select_list'] = 'حدد قائمة بريدية للاطلاع على تفاصيلها.';
+$labels['mailman_no_lists'] = 'لم يتم العثور على قوائم مشتركة لهويتك النشطة.';
+$labels['mailman_no_directory_lists'] = 'لا توجد قوائم قابلة للتصفح متاحة حالياً.';
+$labels['mailman_archives'] = 'المحفوظات';
+$labels['mailman_subscribe'] = 'اشتراك';
+$labels['mailman_unsubscribe'] = 'إلغاء الاشتراك';
+$labels['mailman_send_to_list'] = 'إرسال إلى القائمة';
+$labels['mailman_actions_unavailable'] = 'إجراءات القائمة غير متوفرة حالياً.';
+$labels['mailman_status_ok'] = 'يمكن الوصول إلى ساعي البريد';
+$labels['mailman_status_degraded'] = 'ساعي البريد غير متوفر. إجراءات القراءة والكتابة محدودة.';
+$labels['mailman_not_configured'] = 'لم يتم تكوين تكامل Mailman Mailman.';
+$labels['mailman_subscribe_success'] = 'اكتمل طلب الاشتراك.';
+$labels['mailman_subscribe_failed'] = 'غير قادر على الاشتراك في تلك القائمة.';
+$labels['mailman_subscribe_unavailable'] = 'الاشتراكات معطلة أو غير متوفرة حالياً.';
+$labels['mailman_unsubscribe_success'] = 'إلغاء الاشتراك من القائمة.';
+$labels['mailman_unsubscribe_failed'] = 'لا يمكن إلغاء الاشتراك من تلك القائمة.';
+$labels['mailman_unsubscribe_unavailable'] = 'إجراءات إلغاء الاشتراك معطلة أو غير متاحة حاليًا.';
+$labels['mailman_no_identity'] = 'لم يتم العثور على هوية مرسل قابلة للاستخدام.';
+$labels['mailman_compose_widget_empty'] = 'لا يوجد مستلمون معروفون في قائمة "ساعي البريد';
+$labels['mailman_detection_disabled'] = 'تم تعطيل الكشف عن التأليف في Mailman Mailman معطل.';
+$labels['invalidrequest'] = 'طلب غير صالح.';
+$labels['mailman_template_none'] = 'لا يوجد قالب';
+$labels['mailman_owner_tools_title'] = 'قائمة خيارات الإرسال';
+$labels['mailman_owner_target_prefix'] = 'الإرسال إلى:';
+$labels['mailman_owner_option_require_subject'] = 'طلب موضوع قبل الإرسال';
+$labels['mailman_owner_option_confirm_send'] = 'إظهار التأكيد قبل الإرسال';
+$labels['mailman_owner_option_append_footer'] = 'إلحاق تذييل إلغاء الاشتراك';
+$labels['mailman_owner_preflight_missing_subject'] = 'يرجى إضافة موضوع قبل الإرسال إلى قائمة.';
+$labels['mailman_owner_preflight_confirm_send'] = 'إرسال هذه الرسالة إلى مستلمي القائمة المحددة؟';
+?>

@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Liste';
+$labels['mailman_my_lists'] = 'Listele mele';
+$labels['mailman_available_lists'] = 'Liste disponibile';
+$labels['mailman_debug_title'] = 'Diagnosticare';
+$labels['mailman_select_list'] = 'Selectați o listă de corespondență pentru a vedea detaliile acesteia.';
+$labels['mailman_no_lists'] = 'Nu au fost găsite liste subscrise pentru identitatea dvs. activă.';
+$labels['mailman_no_directory_lists'] = 'În prezent nu sunt disponibile liste care pot fi răsfoite.';
+$labels['mailman_archives'] = 'Arhive';
+$labels['mailman_subscribe'] = 'Abonare';
+$labels['mailman_unsubscribe'] = 'Dezabonare';
+$labels['mailman_send_to_list'] = 'Trimite la listă';
+$labels['mailman_actions_unavailable'] = 'Acțiunile din listă nu sunt disponibile în prezent.';
+$labels['mailman_status_ok'] = 'Mailman este accesibil.';
+$labels['mailman_status_degraded'] = 'Mailman nu este disponibil. Acțiunile de citire și scriere sunt limitate.';
+$labels['mailman_not_configured'] = 'Integrarea Mailman nu este configurată.';
+$labels['mailman_subscribe_success'] = 'Cerere de abonament completată.';
+$labels['mailman_subscribe_failed'] = 'Nu pot să mă abonez la lista respectivă.';
+$labels['mailman_subscribe_unavailable'] = 'Abonamentele sunt dezactivate sau nu sunt disponibile în prezent.';
+$labels['mailman_unsubscribe_success'] = 'Dezabonat de la listă.';
+$labels['mailman_unsubscribe_failed'] = 'Nu pot să mă dezabonez de la acea listă.';
+$labels['mailman_unsubscribe_unavailable'] = 'Acțiunile de dezabonare sunt dezactivate sau nu sunt disponibile în prezent.';
+$labels['mailman_no_identity'] = 'Nu a fost găsită nicio identitate de expeditor utilizabilă.';
+$labels['mailman_compose_widget_empty'] = 'Nu există destinatari recunoscuți ai listei Mailman.';
+$labels['mailman_detection_disabled'] = 'Detectarea compunerii Mailman este dezactivată.';
+$labels['invalidrequest'] = 'Cerere invalidă.';
+$labels['mailman_template_none'] = 'Fără șablon';
+$labels['mailman_owner_tools_title'] = 'Lista opțiunilor de trimitere';
+$labels['mailman_owner_target_prefix'] = 'Trimitere către:';
+$labels['mailman_owner_option_require_subject'] = 'Cereți un subiect înainte de trimitere';
+$labels['mailman_owner_option_confirm_send'] = 'Afișați confirmarea înainte de trimitere';
+$labels['mailman_owner_option_append_footer'] = 'Adăugați footer de dezabonare';
+$labels['mailman_owner_preflight_missing_subject'] = 'Vă rugăm să adăugați un subiect înainte de a trimite la o listă.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Trimiteți acest mesaj către destinatarii din lista selectată?';
+?>

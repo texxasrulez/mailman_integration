@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'רשימות';
+$labels['mailman_my_lists'] = 'הרשימות שלי';
+$labels['mailman_available_lists'] = 'רשימות זמינות';
+$labels['mailman_debug_title'] = 'אבחון';
+$labels['mailman_select_list'] = 'בחר רשימת תפוצה כדי להציג את פרטיה.';
+$labels['mailman_no_lists'] = 'לא נמצאו רשימות מנוי עבור הזהות הפעילה שלך.';
+$labels['mailman_no_directory_lists'] = 'כרגע אין רשימות שניתן לעיין בהן.';
+$labels['mailman_archives'] = 'ארכיון';
+$labels['mailman_subscribe'] = 'הירשם';
+$labels['mailman_unsubscribe'] = 'ביטול המנוי';
+$labels['mailman_send_to_list'] = 'שלח לרשימה';
+$labels['mailman_actions_unavailable'] = 'פעולות הרשימה אינן זמינות כרגע.';
+$labels['mailman_status_ok'] = 'ניתן ליצור קשר עם מיילמן.';
+$labels['mailman_status_degraded'] = 'Mailman אינו זמין. פעולות הקריאה והכתיבה מוגבלות.';
+$labels['mailman_not_configured'] = 'שילוב Mailman אינו מוגדר.';
+$labels['mailman_subscribe_success'] = 'בקשת המנוי הושלמה.';
+$labels['mailman_subscribe_failed'] = 'לא ניתן להירשם לרשימה זו.';
+$labels['mailman_subscribe_unavailable'] = 'המנויים מושבתים או אינם זמינים כרגע.';
+$labels['mailman_unsubscribe_success'] = 'הוסרתי את עצמי מרשימת התפוצה.';
+$labels['mailman_unsubscribe_failed'] = 'לא ניתן לבטל את הרישום מרשימה זו.';
+$labels['mailman_unsubscribe_unavailable'] = 'פעולות ביטול המנוי מושבתות או אינן זמינות כרגע.';
+$labels['mailman_no_identity'] = 'לא נמצאה זהות שולח שמישה.';
+$labels['mailman_compose_widget_empty'] = 'אין נמענים מוכרים ברשימת Mailman.';
+$labels['mailman_detection_disabled'] = 'זיהוי כתיבת הודעות ב-Mailman מושבת.';
+$labels['invalidrequest'] = 'בקשה לא חוקית.';
+$labels['mailman_template_none'] = 'אין תבנית';
+$labels['mailman_owner_tools_title'] = 'אפשרויות שליחת רשימות';
+$labels['mailman_owner_target_prefix'] = 'נשלח אל:';
+$labels['mailman_owner_option_require_subject'] = 'יש להזין נושא לפני השליחה';
+$labels['mailman_owner_option_confirm_send'] = 'הצג אישור לפני שליחה';
+$labels['mailman_owner_option_append_footer'] = 'הוסף כותרת תחתונה לביטול המנוי';
+$labels['mailman_owner_preflight_missing_subject'] = 'אנא הוסף נושא לפני שתשלח הודעה לרשימה.';
+$labels['mailman_owner_preflight_confirm_send'] = 'האם לשלוח הודעה זו לנמענים ברשימה שנבחרה?';
+?>

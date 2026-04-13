@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Списки';
+$labels['mailman_my_lists'] = 'Мои списки';
+$labels['mailman_available_lists'] = 'Доступные списки';
+$labels['mailman_debug_title'] = 'Диагностика';
+$labels['mailman_select_list'] = 'Выберите список рассылки, чтобы просмотреть его детали.';
+$labels['mailman_no_lists'] = 'Для вашей активной личности не найдено списков подписчиков.';
+$labels['mailman_no_directory_lists'] = 'В настоящее время списки с возможностью просмотра не доступны.';
+$labels['mailman_archives'] = 'Архивы';
+$labels['mailman_subscribe'] = 'Подписаться';
+$labels['mailman_unsubscribe'] = 'Отписаться от рассылки';
+$labels['mailman_send_to_list'] = 'Отправить в список';
+$labels['mailman_actions_unavailable'] = 'Действия из списка в настоящее время недоступны.';
+$labels['mailman_status_ok'] = 'Почтальон доступен.';
+$labels['mailman_status_degraded'] = 'Mailman недоступен. Действия чтения и записи ограничены.';
+$labels['mailman_not_configured'] = 'Интеграция с Mailman не настроена.';
+$labels['mailman_subscribe_success'] = 'Запрос на подписку выполнен.';
+$labels['mailman_subscribe_failed'] = 'Невозможно подписаться на этот список.';
+$labels['mailman_subscribe_unavailable'] = 'Подписки отключены или в настоящее время недоступны.';
+$labels['mailman_unsubscribe_success'] = 'Отказаться от подписки на список.';
+$labels['mailman_unsubscribe_failed'] = 'Невозможно отписаться от этого списка.';
+$labels['mailman_unsubscribe_unavailable'] = 'Действия по отказу от подписки отключены или в настоящее время недоступны.';
+$labels['mailman_no_identity'] = 'Идентификатор отправителя не найден.';
+$labels['mailman_compose_widget_empty'] = 'Нет распознанных получателей списка Mailman.';
+$labels['mailman_detection_disabled'] = 'Обнаружение композиции в Mailman отключено.';
+$labels['invalidrequest'] = 'Неверный запрос.';
+$labels['mailman_template_none'] = 'Нет шаблона';
+$labels['mailman_owner_tools_title'] = 'Список параметров отправки';
+$labels['mailman_owner_target_prefix'] = 'Отправка по адресу:';
+$labels['mailman_owner_option_require_subject'] = 'Требуйте указать тему перед отправкой';
+$labels['mailman_owner_option_confirm_send'] = 'Показать подтверждение перед отправкой';
+$labels['mailman_owner_option_append_footer'] = 'Добавьте нижний колонтитул для отказа от подписки';
+$labels['mailman_owner_preflight_missing_subject'] = 'Пожалуйста, добавьте тему перед отправкой в список.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Отправить это сообщение выбранным получателям списка?';
+?>

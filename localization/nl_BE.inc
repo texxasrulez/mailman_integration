@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Lijsten';
+$labels['mailman_my_lists'] = 'Mijn lijsten';
+$labels['mailman_available_lists'] = 'Beschikbare lijsten';
+$labels['mailman_debug_title'] = 'Diagnostiek';
+$labels['mailman_select_list'] = 'Selecteer een mailinglijst om de details te bekijken.';
+$labels['mailman_no_lists'] = 'Er zijn geen abonneelijsten gevonden voor uw actieve identiteit.';
+$labels['mailman_no_directory_lists'] = 'Er zijn momenteel geen bladerbare lijsten beschikbaar.';
+$labels['mailman_archives'] = 'Archief';
+$labels['mailman_subscribe'] = 'Aanmelden';
+$labels['mailman_unsubscribe'] = 'Afmelden';
+$labels['mailman_send_to_list'] = 'Verzenden naar lijst';
+$labels['mailman_actions_unavailable'] = 'Lijstacties zijn momenteel niet beschikbaar.';
+$labels['mailman_status_ok'] = 'Mailman is bereikbaar.';
+$labels['mailman_status_degraded'] = 'Mailman is niet beschikbaar. Lees- en schrijfacties zijn beperkt.';
+$labels['mailman_not_configured'] = 'Mailman integratie is niet geconfigureerd.';
+$labels['mailman_subscribe_success'] = 'Abonnementsaanvraag voltooid.';
+$labels['mailman_subscribe_failed'] = 'Kan me niet abonneren op die lijst.';
+$labels['mailman_subscribe_unavailable'] = 'Abonnementen zijn uitgeschakeld of momenteel niet beschikbaar.';
+$labels['mailman_unsubscribe_success'] = 'Uitgeschreven van de lijst.';
+$labels['mailman_unsubscribe_failed'] = 'Ik kan me niet afmelden voor die lijst.';
+$labels['mailman_unsubscribe_unavailable'] = 'Uitschrijfacties zijn uitgeschakeld of momenteel niet beschikbaar.';
+$labels['mailman_no_identity'] = 'Er is geen bruikbare afzenderidentiteit gevonden.';
+$labels['mailman_compose_widget_empty'] = 'Geen herkende Mailman lijst ontvangers.';
+$labels['mailman_detection_disabled'] = 'Mailman compose detectie is uitgeschakeld.';
+$labels['invalidrequest'] = 'Ongeldig verzoek.';
+$labels['mailman_template_none'] = 'Geen sjabloon';
+$labels['mailman_owner_tools_title'] = 'Lijst met verzendopties';
+$labels['mailman_owner_target_prefix'] = 'Versturen naar:';
+$labels['mailman_owner_option_require_subject'] = 'Vereist een onderwerp voor verzenden';
+$labels['mailman_owner_option_confirm_send'] = 'Bevestiging tonen voor verzenden';
+$labels['mailman_owner_option_append_footer'] = 'Voettekst afmelden toevoegen';
+$labels['mailman_owner_preflight_missing_subject'] = 'Voeg een onderwerp toe voordat u naar een lijst verzendt.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Dit bericht verzenden naar de geselecteerde ontvangers in de lijst?';
+?>

@@ -1,0 +1,17 @@
+<roundcube:include file="includes/layout.html" />
+<h1 class="voice"><roundcube:label name="mailman_integration.mailman_lists_title" /></h1>
+<div id="mainscreen" class="box">
+  <div id="settings-content" class="settings">
+    <div class="boxcontent">
+      <div class="mailman-layout">
+        <aside class="mailman-layout__sidebar">
+          <roundcube:object name="mailmanlistsidebar" />
+        </aside>
+        <section class="mailman-layout__detail">
+          <roundcube:object name="mailmanlistdetail" />
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<roundcube:include file="/includes/footer.html" />

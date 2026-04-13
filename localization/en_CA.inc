@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Lists';
+$labels['mailman_my_lists'] = 'My Lists';
+$labels['mailman_available_lists'] = 'Available Lists';
+$labels['mailman_debug_title'] = 'Diagnostics';
+$labels['mailman_select_list'] = 'Select a mailing list to see its details.';
+$labels['mailman_no_lists'] = 'No subscribed lists were found for your active identity.';
+$labels['mailman_no_directory_lists'] = 'No browseable lists are currently available.';
+$labels['mailman_archives'] = 'Archives';
+$labels['mailman_subscribe'] = 'Subscribe';
+$labels['mailman_unsubscribe'] = 'Unsubscribe';
+$labels['mailman_send_to_list'] = 'Send to List';
+$labels['mailman_actions_unavailable'] = 'List actions are currently unavailable.';
+$labels['mailman_status_ok'] = 'Mailman is reachable.';
+$labels['mailman_status_degraded'] = 'Mailman is unavailable. Read and write actions are limited.';
+$labels['mailman_not_configured'] = 'Mailman integration is not configured.';
+$labels['mailman_subscribe_success'] = 'Subscription request completed.';
+$labels['mailman_subscribe_failed'] = 'Unable to subscribe to that list.';
+$labels['mailman_subscribe_unavailable'] = 'Subscriptions are disabled or currently unavailable.';
+$labels['mailman_unsubscribe_success'] = 'Unsubscribed from the list.';
+$labels['mailman_unsubscribe_failed'] = 'Unable to unsubscribe from that list.';
+$labels['mailman_unsubscribe_unavailable'] = 'Unsubscribe actions are disabled or currently unavailable.';
+$labels['mailman_no_identity'] = 'No usable sender identity was found.';
+$labels['mailman_compose_widget_empty'] = 'No recognized Mailman list recipients.';
+$labels['mailman_detection_disabled'] = 'Mailman compose detection is disabled.';
+$labels['invalidrequest'] = 'Invalid request.';
+$labels['mailman_template_none'] = 'No template';
+$labels['mailman_owner_tools_title'] = 'List send options';
+$labels['mailman_owner_target_prefix'] = 'Sending to:';
+$labels['mailman_owner_option_require_subject'] = 'Require a subject before send';
+$labels['mailman_owner_option_confirm_send'] = 'Show confirmation before send';
+$labels['mailman_owner_option_append_footer'] = 'Append unsubscribe footer';
+$labels['mailman_owner_preflight_missing_subject'] = 'Please add a subject before sending to a list.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Send this message to the selected list recipients?';
+?>

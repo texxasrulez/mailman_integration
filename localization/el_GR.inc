@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Λίστες';
+$labels['mailman_my_lists'] = 'Οι λίστες μου';
+$labels['mailman_available_lists'] = 'Διαθέσιμες λίστες';
+$labels['mailman_debug_title'] = 'Διαγνωστικά';
+$labels['mailman_select_list'] = 'Επιλέξτε μια λίστα αλληλογραφίας για να δείτε τις λεπτομέρειές της.';
+$labels['mailman_no_lists'] = 'Δεν βρέθηκαν εγγεγραμμένες λίστες για την ενεργή σας ταυτότητα.';
+$labels['mailman_no_directory_lists'] = 'Προς το παρόν δεν υπάρχουν διαθέσιμοι κατάλογοι με δυνατότητα περιήγησης.';
+$labels['mailman_archives'] = 'Αρχεία';
+$labels['mailman_subscribe'] = 'Εγγραφείτε στο';
+$labels['mailman_unsubscribe'] = 'Διαγραφή';
+$labels['mailman_send_to_list'] = 'Αποστολή στη λίστα';
+$labels['mailman_actions_unavailable'] = 'Οι ενέργειες λίστας δεν είναι προς το παρόν διαθέσιμες.';
+$labels['mailman_status_ok'] = 'Ο Mailman είναι προσβάσιμος.';
+$labels['mailman_status_degraded'] = 'Ο Mailman δεν είναι διαθέσιμος. Οι ενέργειες ανάγνωσης και εγγραφής είναι περιορισμένες.';
+$labels['mailman_not_configured'] = 'Η ενσωμάτωση του Mailman δεν έχει ρυθμιστεί.';
+$labels['mailman_subscribe_success'] = 'Το αίτημα εγγραφής ολοκληρώθηκε.';
+$labels['mailman_subscribe_failed'] = 'Δεν είναι δυνατή η εγγραφή σε αυτή τη λίστα.';
+$labels['mailman_subscribe_unavailable'] = 'Οι συνδρομές είναι απενεργοποιημένες ή προς το παρόν μη διαθέσιμες.';
+$labels['mailman_unsubscribe_success'] = 'Διαγραφή από τη λίστα.';
+$labels['mailman_unsubscribe_failed'] = 'Δεν είναι δυνατή η διαγραφή από αυτή τη λίστα.';
+$labels['mailman_unsubscribe_unavailable'] = 'Οι ενέργειες διαγραφής είναι απενεργοποιημένες ή προς το παρόν μη διαθέσιμες.';
+$labels['mailman_no_identity'] = 'Δεν βρέθηκε ταυτότητα αποστολέα που να μπορεί να χρησιμοποιηθεί.';
+$labels['mailman_compose_widget_empty'] = 'Δεν υπάρχουν αναγνωρισμένοι παραλήπτες της λίστας Mailman.';
+$labels['mailman_detection_disabled'] = 'Η ανίχνευση σύνταξης Mailman είναι απενεργοποιημένη.';
+$labels['invalidrequest'] = 'Μη έγκυρο αίτημα.';
+$labels['mailman_template_none'] = 'Δεν υπάρχει πρότυπο';
+$labels['mailman_owner_tools_title'] = 'Λίστα επιλογών αποστολής';
+$labels['mailman_owner_target_prefix'] = 'Αποστολή στο:';
+$labels['mailman_owner_option_require_subject'] = 'Απαίτηση θέματος πριν από την αποστολή';
+$labels['mailman_owner_option_confirm_send'] = 'Εμφάνιση επιβεβαίωσης πριν από την αποστολή';
+$labels['mailman_owner_option_append_footer'] = 'Προσθήκη υποσέλιδου διαγραφής';
+$labels['mailman_owner_preflight_missing_subject'] = 'Προσθέστε ένα θέμα πριν την αποστολή σε μια λίστα.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Αποστολή αυτού του μηνύματος στους επιλεγμένους παραλήπτες της λίστας';
+?>

@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Rhestrau';
+$labels['mailman_my_lists'] = 'Fy Rhestri';
+$labels['mailman_available_lists'] = 'Rhestrau sydd ar gael';
+$labels['mailman_debug_title'] = 'Diagnosteg';
+$labels['mailman_select_list'] = 'Dewiswch restr bostio i weld ei manylion.';
+$labels['mailman_no_lists'] = 'Ni chanfuwyd unrhyw restau tanysgrifio ar gyfer eich hunaniaeth weithredol.';
+$labels['mailman_no_directory_lists'] = 'Nid oes unrhyw restau y gellir eu pori ar gael ar hyn o bryd.';
+$labels['mailman_archives'] = 'Archifau';
+$labels['mailman_subscribe'] = 'Tanysgrifio';
+$labels['mailman_unsubscribe'] = 'Dad-danysgrifio';
+$labels['mailman_send_to_list'] = 'Anfon i\'r rhestr';
+$labels['mailman_actions_unavailable'] = 'Nid yw gweithredoedd rhestru ar gael ar hyn o bryd.';
+$labels['mailman_status_ok'] = 'Mae Mailman yn gyrraeddadwy.';
+$labels['mailman_status_degraded'] = 'Nid yw Mailman ar gael. Mae gweithredoedd darllen ac ysgrifennu wedi\'u cyfyngu.';
+$labels['mailman_not_configured'] = 'Nid yw integreiddiad Mailman wedi\'i ffurfweddu.';
+$labels['mailman_subscribe_success'] = 'Cwblhawyd y cais tanysgrifio.';
+$labels['mailman_subscribe_failed'] = 'Analluog i danysgrifio i\'r rhestr honno.';
+$labels['mailman_subscribe_unavailable'] = 'Mae tanysgrifiadau wedi\'u hanalluogi neu ar gael ar hyn o bryd.';
+$labels['mailman_unsubscribe_success'] = 'Wedi dad-danysgrifio o\'r rhestr.';
+$labels['mailman_unsubscribe_failed'] = 'Analluog i ddad-danysgrifio o\'r rhestr honno.';
+$labels['mailman_unsubscribe_unavailable'] = 'Mae gweithredoedd diddymu tanysgrifiad wedi\'u hanalluogi neu ar gael ar hyn o bryd.';
+$labels['mailman_no_identity'] = 'Ni chanfuwyd unrhyw hunaniaeth anfonwr ddefnyddiadwy.';
+$labels['mailman_compose_widget_empty'] = 'Dim derbynwyr rhestr Mailman a gydnabyddir.';
+$labels['mailman_detection_disabled'] = 'Mae canfod llunio neges e-bost wedi\'i analluogi.';
+$labels['invalidrequest'] = 'Cais annilys.';
+$labels['mailman_template_none'] = 'Dim templed';
+$labels['mailman_owner_tools_title'] = 'Rhestru opsiynau anfon';
+$labels['mailman_owner_target_prefix'] = 'Anfon i:';
+$labels['mailman_owner_option_require_subject'] = 'Gofynnwch am wrthrych cyn anfon';
+$labels['mailman_owner_option_confirm_send'] = 'Dangos cadarnhad cyn anfon';
+$labels['mailman_owner_option_append_footer'] = 'Ychwanegu troedyn dad-danysgrifio';
+$labels['mailman_owner_preflight_missing_subject'] = 'Ychwanegwch bwnc cyn anfon i restr.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Anfon y neges hon at dderbynwyr y rhestr a ddewiswyd?';
+?>

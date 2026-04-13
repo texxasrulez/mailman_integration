@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Elenchi';
+$labels['mailman_my_lists'] = 'I miei elenchi';
+$labels['mailman_available_lists'] = 'Elenchi disponibili';
+$labels['mailman_debug_title'] = 'Diagnostica';
+$labels['mailman_select_list'] = 'Selezionare una mailing list per visualizzarne i dettagli.';
+$labels['mailman_no_lists'] = 'Non sono state trovate liste di iscritti per la vostra identità attiva.';
+$labels['mailman_no_directory_lists'] = 'Al momento non sono disponibili elenchi sfogliabili.';
+$labels['mailman_archives'] = 'Archivio';
+$labels['mailman_subscribe'] = 'Abbonarsi';
+$labels['mailman_unsubscribe'] = 'Annullamento dell\'iscrizione';
+$labels['mailman_send_to_list'] = 'Invia all\'elenco';
+$labels['mailman_actions_unavailable'] = 'Le azioni dell\'elenco non sono attualmente disponibili.';
+$labels['mailman_status_ok'] = 'Mailman è raggiungibile.';
+$labels['mailman_status_degraded'] = 'Mailman non è disponibile. Le azioni di lettura e scrittura sono limitate.';
+$labels['mailman_not_configured'] = 'L\'integrazione di Mailman non è configurata.';
+$labels['mailman_subscribe_success'] = 'Richiesta di abbonamento completata.';
+$labels['mailman_subscribe_failed'] = 'Impossibile iscriversi a quella lista.';
+$labels['mailman_subscribe_unavailable'] = 'Le iscrizioni sono disattivate o non sono attualmente disponibili.';
+$labels['mailman_unsubscribe_success'] = 'Si è cancellato dalla lista.';
+$labels['mailman_unsubscribe_failed'] = 'Impossibile cancellarsi da quella lista.';
+$labels['mailman_unsubscribe_unavailable'] = 'Le azioni di annullamento dell\'iscrizione sono disabilitate o attualmente non disponibili.';
+$labels['mailman_no_identity'] = 'Non è stata trovata alcuna identità di mittente utilizzabile.';
+$labels['mailman_compose_widget_empty'] = 'Nessun destinatario riconosciuto dell\'elenco Mailman.';
+$labels['mailman_detection_disabled'] = 'Il rilevamento della composizione di Mailman è disabilitato.';
+$labels['invalidrequest'] = 'Richiesta non valida.';
+$labels['mailman_template_none'] = 'Nessun modello';
+$labels['mailman_owner_tools_title'] = 'Elenco delle opzioni di invio';
+$labels['mailman_owner_target_prefix'] = 'Invio a:';
+$labels['mailman_owner_option_require_subject'] = 'Richiedere un oggetto prima dell\'invio';
+$labels['mailman_owner_option_confirm_send'] = 'Mostra la conferma prima dell\'invio';
+$labels['mailman_owner_option_append_footer'] = 'Aggiunta di un piè di pagina per l\'annullamento dell\'iscrizione';
+$labels['mailman_owner_preflight_missing_subject'] = 'Si prega di aggiungere un oggetto prima di inviare a una lista.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Inviare questo messaggio ai destinatari dell\'elenco selezionato?';
+?>

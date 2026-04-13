@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Danh sách';
+$labels['mailman_my_lists'] = 'Danh sách của tôi';
+$labels['mailman_available_lists'] = 'Danh sách có sẵn';
+$labels['mailman_debug_title'] = 'Chẩn đoán';
+$labels['mailman_select_list'] = 'Chọn một danh sách gửi thư để xem chi tiết.';
+$labels['mailman_no_lists'] = 'Không tìm thấy danh sách nào đã đăng ký cho tài khoản hiện tại của bạn.';
+$labels['mailman_no_directory_lists'] = 'Hiện tại không có danh sách nào có thể duyệt được.';
+$labels['mailman_archives'] = 'Lưu trữ';
+$labels['mailman_subscribe'] = 'Đăng ký';
+$labels['mailman_unsubscribe'] = 'Hủy đăng ký';
+$labels['mailman_send_to_list'] = 'Gửi đến danh sách';
+$labels['mailman_actions_unavailable'] = 'Hiện tại, các thao tác với danh sách không khả dụng.';
+$labels['mailman_status_ok'] = 'Có thể liên hệ với Mailman.';
+$labels['mailman_status_degraded'] = 'Mailman hiện không khả dụng. Các thao tác đọc và ghi bị hạn chế.';
+$labels['mailman_not_configured'] = 'Chưa cấu hình tích hợp Mailman.';
+$labels['mailman_subscribe_success'] = 'Yêu cầu đăng ký đã hoàn tất.';
+$labels['mailman_subscribe_failed'] = 'Không thể đăng ký danh sách đó.';
+$labels['mailman_subscribe_unavailable'] = 'Dịch vụ đăng ký hiện đã bị vô hiệu hóa hoặc tạm thời không khả dụng.';
+$labels['mailman_unsubscribe_success'] = 'Đã hủy đăng ký khỏi danh sách.';
+$labels['mailman_unsubscribe_failed'] = 'Không thể hủy đăng ký khỏi danh sách đó.';
+$labels['mailman_unsubscribe_unavailable'] = 'Các thao tác hủy đăng ký đã bị vô hiệu hóa hoặc hiện không khả dụng.';
+$labels['mailman_no_identity'] = 'Không tìm thấy thông tin người gửi hợp lệ.';
+$labels['mailman_compose_widget_empty'] = 'Không có người nhận nào trong danh sách Mailman được xác nhận.';
+$labels['mailman_detection_disabled'] = 'Tính năng phát hiện soạn thư của Mailman đã bị tắt.';
+$labels['invalidrequest'] = 'Yêu cầu không hợp lệ.';
+$labels['mailman_template_none'] = 'Không có mẫu';
+$labels['mailman_owner_tools_title'] = 'Danh sách các tùy chọn gửi';
+$labels['mailman_owner_target_prefix'] = 'Gửi đến:';
+$labels['mailman_owner_option_require_subject'] = 'Yêu cầu nhập tiêu đề trước khi gửi';
+$labels['mailman_owner_option_confirm_send'] = 'Hiển thị thông báo xác nhận trước khi gửi';
+$labels['mailman_owner_option_append_footer'] = 'Thêm phần chân trang hủy đăng ký';
+$labels['mailman_owner_preflight_missing_subject'] = 'Vui lòng điền tiêu đề trước khi gửi thư đến danh sách.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Gửi tin nhắn này đến những người nhận trong danh sách đã chọn?';
+?>

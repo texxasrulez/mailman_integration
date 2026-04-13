@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Ro\'yxatlar';
+$labels['mailman_my_lists'] = 'Mening ro\'yxatlarim';
+$labels['mailman_available_lists'] = 'Mavjud ro\'yxatlar';
+$labels['mailman_debug_title'] = 'Diagnostika';
+$labels['mailman_select_list'] = 'Yuborish ro\'yxatini tanlang va uning tafsilotlarini ko\'ring.';
+$labels['mailman_no_lists'] = 'Faol identifikatori uchun obuna bo\'lgan hech qanday ro\'yxat topilmadi.';
+$labels['mailman_no_directory_lists'] = 'Hozirda ko\'rib chiqiladigan ro\'yxatlar mavjud emas.';
+$labels['mailman_archives'] = 'Arxivlar';
+$labels['mailman_subscribe'] = 'Obuna bo\'ling';
+$labels['mailman_unsubscribe'] = 'Obunani bekor qiling';
+$labels['mailman_send_to_list'] = 'Ro\'yxatga yuborish';
+$labels['mailman_actions_unavailable'] = 'Ro\'yxat harakatlari hozirda mavjud emas.';
+$labels['mailman_status_ok'] = 'Mailman bilan bog\'lanish mumkin.';
+$labels['mailman_status_degraded'] = 'Mailman mavjud emas. O\'qish va yozish amallari cheklangan.';
+$labels['mailman_not_configured'] = 'Mailman integratsiyasi sozlanmagan.';
+$labels['mailman_subscribe_success'] = 'Obuna so\'rovi yakunlandi.';
+$labels['mailman_subscribe_failed'] = 'Ushbu ro\'yxatga obuna bo\'lish mumkin emas.';
+$labels['mailman_subscribe_unavailable'] = 'Obunalar o\'chirilgan yoki hozirda mavjud emas.';
+$labels['mailman_unsubscribe_success'] = 'Ro\'yxatdan chiqarildi.';
+$labels['mailman_unsubscribe_failed'] = 'U ro\'yxatdan chiqib ketish imkoni yo\'q.';
+$labels['mailman_unsubscribe_unavailable'] = 'Obunani bekor qilish amallari o\'chirilgan yoki hozirda mavjud emas.';
+$labels['mailman_no_identity'] = 'Foydalanish mumkin bo\'lgan jo\'natuvchi identifikatori topilmadi.';
+$labels['mailman_compose_widget_empty'] = 'Tan olingan Mailman ro\'yxatining hech bir qabul qiluvchisi yo\'q.';
+$labels['mailman_detection_disabled'] = 'Mailman kompozitsiya aniqlovi o\'chirilgan.';
+$labels['invalidrequest'] = 'Noto\'g\'ri so\'rov.';
+$labels['mailman_template_none'] = 'Hech qanday shablon';
+$labels['mailman_owner_tools_title'] = 'Yuborish variantlarini ro\'yxatlang';
+$labels['mailman_owner_target_prefix'] = 'Yuborish uchun:';
+$labels['mailman_owner_option_require_subject'] = 'Yuborishdan oldin mavzu talab qilinadi';
+$labels['mailman_owner_option_confirm_send'] = 'Yuborishdan oldin tasdiqni ko\'rsating';
+$labels['mailman_owner_option_append_footer'] = 'Obunani bekor qilish uchun pastki qismga qo\'shimcha qo\'shing';
+$labels['mailman_owner_preflight_missing_subject'] = 'Iltimos, ro\'yxatga yuborishdan oldin mavzu qo\'shing.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Ushbu xabarni tanlangan ro\'yxat qabul qiluvchilariga yuborishmi?';
+?>

@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Списъци';
+$labels['mailman_my_lists'] = 'Моите списъци';
+$labels['mailman_available_lists'] = 'Налични списъци';
+$labels['mailman_debug_title'] = 'Диагностика';
+$labels['mailman_select_list'] = 'Изберете пощенски списък, за да видите подробностите за него.';
+$labels['mailman_no_lists'] = 'Не бяха открити абонаментни списъци за вашата активна самоличност.';
+$labels['mailman_no_directory_lists'] = 'Понастоящем не са налични списъци за преглед.';
+$labels['mailman_archives'] = 'Архиви';
+$labels['mailman_subscribe'] = 'Абонирайте се за';
+$labels['mailman_unsubscribe'] = 'Отписване от';
+$labels['mailman_send_to_list'] = 'Изпращане към списък';
+$labels['mailman_actions_unavailable'] = 'Действия от списъка в момента не са налични.';
+$labels['mailman_status_ok'] = 'Mailman е достъпен.';
+$labels['mailman_status_degraded'] = 'Mailman е недостъпен. Действията за четене и запис са ограничени.';
+$labels['mailman_not_configured'] = 'Интеграцията на Mailman не е конфигурирана.';
+$labels['mailman_subscribe_success'] = 'Заявката за абонамент е завършена.';
+$labels['mailman_subscribe_failed'] = 'Не мога да се абонирам за този списък.';
+$labels['mailman_subscribe_unavailable'] = 'Абонаментите са деактивирани или в момента не са налични.';
+$labels['mailman_unsubscribe_success'] = 'Отписване от списъка.';
+$labels['mailman_unsubscribe_failed'] = 'Не мога да се отпиша от този списък.';
+$labels['mailman_unsubscribe_unavailable'] = 'Действията за отписване са деактивирани или в момента не са налични.';
+$labels['mailman_no_identity'] = 'Не е открита използваема идентичност на изпращача.';
+$labels['mailman_compose_widget_empty'] = 'Няма разпознати получатели в списъка на Mailman.';
+$labels['mailman_detection_disabled'] = 'Детектирането на съставяне на Mailman е деактивирано.';
+$labels['invalidrequest'] = 'Невалидна заявка.';
+$labels['mailman_template_none'] = 'Няма шаблон';
+$labels['mailman_owner_tools_title'] = 'Списък с опции за изпращане';
+$labels['mailman_owner_target_prefix'] = 'Изпращане до:';
+$labels['mailman_owner_option_require_subject'] = 'Изискване на тема преди изпращане';
+$labels['mailman_owner_option_confirm_send'] = 'Показване на потвърждение преди изпращане';
+$labels['mailman_owner_option_append_footer'] = 'Добавяне на футър за отписване';
+$labels['mailman_owner_preflight_missing_subject'] = 'Моля, добавете тема, преди да изпратите до списък.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Изпращане на това съобщение до избраните получатели в списъка?';
+?>

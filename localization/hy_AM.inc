@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Ցուցակներ';
+$labels['mailman_my_lists'] = 'Իմ ցուցակները';
+$labels['mailman_available_lists'] = 'Մատչելի ցուցակներ';
+$labels['mailman_debug_title'] = 'Դիագնոստիկա';
+$labels['mailman_select_list'] = 'Ընտրեք փոստային ցուցակ՝ դրա մանրամասները տեսնելու համար։';
+$labels['mailman_no_lists'] = 'Ձեր ակտիվ նույնականության համար բաժանորդագրված ցուցակներ չեն գտնվել։';
+$labels['mailman_no_directory_lists'] = 'Ընթացիկ պահին ցուցակներ դիտելու համար մատչելի չեն։';
+$labels['mailman_archives'] = 'Արխիվներ';
+$labels['mailman_subscribe'] = 'Բաժանորդագրվել';
+$labels['mailman_unsubscribe'] = 'Բաժանորդագրությունից հրաժարվել';
+$labels['mailman_send_to_list'] = 'Ուղարկել ցուցակին';
+$labels['mailman_actions_unavailable'] = 'Ցուցակի գործողությունները ներկայումս մատչելի չեն։';
+$labels['mailman_status_ok'] = 'Մեյլմենին կարելի է կապվել։';
+$labels['mailman_status_degraded'] = 'Mailman-ը մատչելի չէ։ Կարդալու և գրելու գործողությունները սահմանափակված են։';
+$labels['mailman_not_configured'] = 'Mailman ինտեգրումը չի կարգավորված։';
+$labels['mailman_subscribe_success'] = 'Բաժանորդագրության հարցումը ավարտվել է։';
+$labels['mailman_subscribe_failed'] = 'Չհաջողվեց բաժանորդագրվել այդ ցուցակին։';
+$labels['mailman_subscribe_unavailable'] = 'Բաժանորդագրումները անջատված են կամ ներկայումս մատչելի չեն։';
+$labels['mailman_unsubscribe_success'] = 'Ցուցակից հանվել է։';
+$labels['mailman_unsubscribe_failed'] = 'Չի հաջողվում անդամակցությունը չեղարկել այդ ցուցակից։';
+$labels['mailman_unsubscribe_unavailable'] = 'Բաժանորդագրությունից հրաժարվելու գործողությունները անջատված են կամ ներկայումս մատչելի չեն։';
+$labels['mailman_no_identity'] = 'Չգտնվեց օգտագործելի ուղարկողի նույնականացում։';
+$labels['mailman_compose_widget_empty'] = 'Չճանաչված Mailman ցուցակի ստացողներ։';
+$labels['mailman_detection_disabled'] = 'Mailman-ի կազմման հայտնաբերումը անջատված է։';
+$labels['invalidrequest'] = 'Անվավեր հարցում։';
+$labels['mailman_template_none'] = 'Չկա ձևանմուշ';
+$labels['mailman_owner_tools_title'] = 'Թվարկել ուղարկման տարբերակները';
+$labels['mailman_owner_target_prefix'] = 'Ուղարկել դեպի:';
+$labels['mailman_owner_option_require_subject'] = 'Ուղարկելուց առաջ պահանջել թեմա';
+$labels['mailman_owner_option_confirm_send'] = 'Ուղարկելուց առաջ ցուցադրել հաստատումը';
+$labels['mailman_owner_option_append_footer'] = 'Ավելացնել բաժանորդագրությունից հրաժարվելու ստորագրություն';
+$labels['mailman_owner_preflight_missing_subject'] = 'Խնդրում ենք ցուցակին ուղարկելուց առաջ նշել թեմա։';
+$labels['mailman_owner_preflight_confirm_send'] = 'Այս հաղորդագրությունը ուղարկե՞լ ընտրված ցուցակի ստացողներին։';
+?>

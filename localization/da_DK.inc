@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Lister';
+$labels['mailman_my_lists'] = 'Mine lister';
+$labels['mailman_available_lists'] = 'Tilgængelige lister';
+$labels['mailman_debug_title'] = 'Diagnostik';
+$labels['mailman_select_list'] = 'Vælg en mailingliste for at se dens detaljer.';
+$labels['mailman_no_lists'] = 'Der blev ikke fundet nogen abonnementslister for din aktive identitet.';
+$labels['mailman_no_directory_lists'] = 'Der er i øjeblikket ingen lister, der kan gennemses.';
+$labels['mailman_archives'] = 'Arkiv';
+$labels['mailman_subscribe'] = 'Abonner';
+$labels['mailman_unsubscribe'] = 'Afmeld dit abonnement';
+$labels['mailman_send_to_list'] = 'Send til liste';
+$labels['mailman_actions_unavailable'] = 'Listehandlinger er ikke tilgængelige i øjeblikket.';
+$labels['mailman_status_ok'] = 'Mailman er tilgængelig.';
+$labels['mailman_status_degraded'] = 'Mailman er ikke tilgængelig. Læse- og skrivehandlinger er begrænsede.';
+$labels['mailman_not_configured'] = 'Mailman-integrationen er ikke konfigureret.';
+$labels['mailman_subscribe_success'] = 'Anmodning om abonnement gennemført.';
+$labels['mailman_subscribe_failed'] = 'Det er ikke muligt at abonnere på den liste.';
+$labels['mailman_subscribe_unavailable'] = 'Abonnementer er deaktiveret eller ikke tilgængelige i øjeblikket.';
+$labels['mailman_unsubscribe_success'] = 'Afmeldt fra listen.';
+$labels['mailman_unsubscribe_failed'] = 'Det er ikke muligt at afmelde den liste.';
+$labels['mailman_unsubscribe_unavailable'] = 'Afmeldingshandlinger er deaktiveret eller ikke tilgængelige i øjeblikket.';
+$labels['mailman_no_identity'] = 'Der blev ikke fundet nogen brugbar afsenderidentitet.';
+$labels['mailman_compose_widget_empty'] = 'Ingen genkendte modtagere på Mailman-listen.';
+$labels['mailman_detection_disabled'] = 'Mailman compose detection er deaktiveret.';
+$labels['invalidrequest'] = 'Ugyldig anmodning.';
+$labels['mailman_template_none'] = 'Ingen skabelon';
+$labels['mailman_owner_tools_title'] = 'Liste over sendemuligheder';
+$labels['mailman_owner_target_prefix'] = 'Sender til:';
+$labels['mailman_owner_option_require_subject'] = 'Kræver et emne før afsendelse';
+$labels['mailman_owner_option_confirm_send'] = 'Vis bekræftelse før afsendelse';
+$labels['mailman_owner_option_append_footer'] = 'Tilføj footer til afmelding';
+$labels['mailman_owner_preflight_missing_subject'] = 'Tilføj venligst et emne, før du sender til en liste.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Send denne besked til de valgte modtagere på listen?';
+?>
