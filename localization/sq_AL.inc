@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Lista';
+$labels['mailman_my_lists'] = 'Listat e mia';
+$labels['mailman_available_lists'] = 'Lista të disponueshme';
+$labels['mailman_debug_title'] = 'Diagnostika';
+$labels['mailman_select_list'] = 'Zgjidhni një listë postare për të parë detajet e saj.';
+$labels['mailman_no_lists'] = 'Nuk u gjetën lista të abonuar për identitetin tuaj aktiv.';
+$labels['mailman_no_directory_lists'] = 'Aktualisht nuk ka lista të shfletueshme në dispozicion.';
+$labels['mailman_archives'] = 'Arkiva';
+$labels['mailman_subscribe'] = 'Abono';
+$labels['mailman_unsubscribe'] = 'Ç\'regjistrohu';
+$labels['mailman_send_to_list'] = 'Dërgo në listë';
+$labels['mailman_actions_unavailable'] = 'Veprimet e listës aktualisht nuk janë të disponueshme.';
+$labels['mailman_status_ok'] = 'Mailman është i arritshëm.';
+$labels['mailman_status_degraded'] = 'Mailman nuk është i disponueshëm. Veprimet e leximit dhe të shkrimit janë të kufizuara.';
+$labels['mailman_not_configured'] = 'Integrimi i Mailman nuk është konfiguruar.';
+$labels['mailman_subscribe_success'] = 'Kërkesa për abonim u përfundua.';
+$labels['mailman_subscribe_failed'] = 'Nuk mund të abonoheni në atë listë.';
+$labels['mailman_subscribe_unavailable'] = 'Abonentimet janë ç\'aktivizuar ose aktualisht të paarritshme.';
+$labels['mailman_unsubscribe_success'] = 'U çregjistrova nga lista.';
+$labels['mailman_unsubscribe_failed'] = 'Nuk mund të çregjistrohem nga ajo listë.';
+$labels['mailman_unsubscribe_unavailable'] = 'Veprimet e çregjistrimit janë çaktivizuar ose aktualisht të paarritshme.';
+$labels['mailman_no_identity'] = 'Nuk u gjet asnjë identitet dërgues i përdorshëm.';
+$labels['mailman_compose_widget_empty'] = 'Asnjë marrës i njohur i listës Mailman.';
+$labels['mailman_detection_disabled'] = 'Detektimi i përbërjes së Mailman është ç\'aktivizuar.';
+$labels['invalidrequest'] = 'Kërkesë e pavlefshme.';
+$labels['mailman_template_none'] = 'Asnjë shabllon';
+$labels['mailman_owner_tools_title'] = 'Lista e opsioneve të dërgimit';
+$labels['mailman_owner_target_prefix'] = 'Dërgimi te:';
+$labels['mailman_owner_option_require_subject'] = 'Kërko një subjekt para dërgimit';
+$labels['mailman_owner_option_confirm_send'] = 'Shfaq konfirmimin para dërgimit';
+$labels['mailman_owner_option_append_footer'] = 'Shto në fund të mesazhit nënshkrimin për t\'u ç\'regjistruar';
+$labels['mailman_owner_preflight_missing_subject'] = 'Ju lutem shtoni një subjekt para se ta dërgoni në një listë.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Dërgoni këtë mesazh te marrësit e listës së zgjedhur?';
+?>

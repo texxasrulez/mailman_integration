@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Verzeichnisse';
+$labels['mailman_my_lists'] = 'Meine Listen';
+$labels['mailman_available_lists'] = 'Verfügbare Listen';
+$labels['mailman_debug_title'] = 'Diagnostik';
+$labels['mailman_select_list'] = 'Wählen Sie eine Mailingliste aus, um deren Details zu sehen.';
+$labels['mailman_no_lists'] = 'Es wurden keine abonnierten Listen für Ihre aktive Identität gefunden.';
+$labels['mailman_no_directory_lists'] = 'Derzeit sind keine durchsuchbaren Listen verfügbar.';
+$labels['mailman_archives'] = 'Archiv';
+$labels['mailman_subscribe'] = 'Abonnieren';
+$labels['mailman_unsubscribe'] = 'Abbestellen';
+$labels['mailman_send_to_list'] = 'An Liste senden';
+$labels['mailman_actions_unavailable'] = 'Die Listenaktionen sind derzeit nicht verfügbar.';
+$labels['mailman_status_ok'] = 'Mailman ist erreichbar.';
+$labels['mailman_status_degraded'] = 'Mailman ist nicht verfügbar. Lese- und Schreibvorgänge sind eingeschränkt.';
+$labels['mailman_not_configured'] = 'Die Mailman-Integration ist nicht konfiguriert.';
+$labels['mailman_subscribe_success'] = 'Abonnementantrag abgeschlossen.';
+$labels['mailman_subscribe_failed'] = 'Ich kann diese Liste nicht abonnieren.';
+$labels['mailman_subscribe_unavailable'] = 'Abonnements sind deaktiviert oder derzeit nicht verfügbar.';
+$labels['mailman_unsubscribe_success'] = 'Von der Liste abgemeldet.';
+$labels['mailman_unsubscribe_failed'] = 'Ich kann mich nicht von dieser Liste abmelden.';
+$labels['mailman_unsubscribe_unavailable'] = 'Abmeldeaktionen sind deaktiviert oder derzeit nicht verfügbar.';
+$labels['mailman_no_identity'] = 'Es wurde keine brauchbare Absenderidentität gefunden.';
+$labels['mailman_compose_widget_empty'] = 'Keine erkannten Mailman-Listenempfänger.';
+$labels['mailman_detection_disabled'] = 'Die Mailman-Kompositionserkennung ist deaktiviert.';
+$labels['invalidrequest'] = 'Ungültige Anfrage.';
+$labels['mailman_template_none'] = 'Keine Vorlage';
+$labels['mailman_owner_tools_title'] = 'Liste der Sendeoptionen';
+$labels['mailman_owner_target_prefix'] = 'Senden an:';
+$labels['mailman_owner_option_require_subject'] = 'Vor dem Senden einen Betreff verlangen';
+$labels['mailman_owner_option_confirm_send'] = 'Bestätigung vor dem Senden anzeigen';
+$labels['mailman_owner_option_append_footer'] = 'Fußzeile zum Abbestellen anhängen';
+$labels['mailman_owner_preflight_missing_subject'] = 'Bitte fügen Sie einen Betreff hinzu, bevor Sie sie an eine Liste senden.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Diese Nachricht an die ausgewählten Listenempfänger senden?';
+?>

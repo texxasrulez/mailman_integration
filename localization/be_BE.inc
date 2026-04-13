@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Спісы';
+$labels['mailman_my_lists'] = 'Мае спісы';
+$labels['mailman_available_lists'] = 'Даступныя спісы';
+$labels['mailman_debug_title'] = 'Дыягностыка';
+$labels['mailman_select_list'] = 'Выберыце рассылку, каб праглядзець яе падрабязнасці.';
+$labels['mailman_no_lists'] = 'Для вашага актыўнага ўліковага запісу не знойдзена падпісаных спісаў.';
+$labels['mailman_no_directory_lists'] = 'У цяперашні час даступных спісаў для прагляду няма.';
+$labels['mailman_archives'] = 'Архівы';
+$labels['mailman_subscribe'] = 'Падпісацца';
+$labels['mailman_unsubscribe'] = 'Адпісацца';
+$labels['mailman_send_to_list'] = 'Даслаць на спіс';
+$labels['mailman_actions_unavailable'] = 'Аперацыі са спісам зараз недаступныя.';
+$labels['mailman_status_ok'] = 'Мэйлмэн даступны.';
+$labels['mailman_status_degraded'] = 'Паштоўнік недаступны. Дзеянні па чытанні і запісе абмежаваныя.';
+$labels['mailman_not_configured'] = 'Інтэграцыя Mailman не наладжана.';
+$labels['mailman_subscribe_success'] = 'Запыт на падпіску апрацаваны.';
+$labels['mailman_subscribe_failed'] = 'Не ўдалося падпісацца на гэты спіс.';
+$labels['mailman_subscribe_unavailable'] = 'Падпіскі адключаны або зараз недаступныя.';
+$labels['mailman_unsubscribe_success'] = 'Падпіска скасаваная.';
+$labels['mailman_unsubscribe_failed'] = 'Немагчыма адпісацца ад гэтага спіса.';
+$labels['mailman_unsubscribe_unavailable'] = 'Дзеянні па адпісцы адключаны або зараз недаступныя.';
+$labels['mailman_no_identity'] = 'Не знойдзена ніякай прыдатнай ідэнтычнасці адпраўніка.';
+$labels['mailman_compose_widget_empty'] = 'Ніводзін прызнаных атрымальнікаў спіса Mailman.';
+$labels['mailman_detection_disabled'] = 'Выяўленне Mailman Compose адключана.';
+$labels['invalidrequest'] = 'Няправільны запыт.';
+$labels['mailman_template_none'] = 'Няма шаблона';
+$labels['mailman_owner_tools_title'] = 'Спіс варыянтаў адпраўкі';
+$labels['mailman_owner_target_prefix'] = 'Даслаць на:';
+$labels['mailman_owner_option_require_subject'] = 'Патрабуецца тэма перад адпраўкай';
+$labels['mailman_owner_option_confirm_send'] = 'Паказаць пацвярджэнне перад адпраўкай';
+$labels['mailman_owner_option_append_footer'] = 'Дадаць падпіску ў подпіс';
+$labels['mailman_owner_preflight_missing_subject'] = 'Калі ласка, дадавайце тэму перад адпраўкай на спіс.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Даслаць гэтае паведамленне выбраным атрымальнікам са спіса?';
+?>

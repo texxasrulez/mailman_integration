@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'তালিকাগুলি';
+$labels['mailman_my_lists'] = 'আমার তালিকাগুলি';
+$labels['mailman_available_lists'] = 'উপলব্ধ তালিকাগুলি';
+$labels['mailman_debug_title'] = 'নিদান';
+$labels['mailman_select_list'] = 'একটি মেইলিং তালিকা নির্বাচন করুন তার বিবরণ দেখতে।';
+$labels['mailman_no_lists'] = 'আপনার সক্রিয় পরিচয়ের জন্য কোনো সাবস্ক্রাইব করা তালিকা পাওয়া যায়নি।';
+$labels['mailman_no_directory_lists'] = 'বর্তমানে কোনো ব্রাউজযোগ্য তালিকা উপলব্ধ নেই।';
+$labels['mailman_archives'] = 'আর্কাইভসমূহ';
+$labels['mailman_subscribe'] = 'সাবস্ক্রাইব করুন';
+$labels['mailman_unsubscribe'] = 'অবস্ক্রাইব করুন';
+$labels['mailman_send_to_list'] = 'তালিকায় পাঠান';
+$labels['mailman_actions_unavailable'] = 'তালিকা ক্রিয়াগুলি বর্তমানে অনুপলব্ধ।';
+$labels['mailman_status_ok'] = 'মেইলম্যানের সাথে যোগাযোগ করা যায়।';
+$labels['mailman_status_degraded'] = 'মেইলম্যান অনুপলব্ধ। পড়া ও লেখার ক্রিয়াকলাপ সীমিত।';
+$labels['mailman_not_configured'] = 'মেইলম্যান ইন্টিগ্রেশন কনফিগার করা হয়নি।';
+$labels['mailman_subscribe_success'] = 'সাবস্ক্রিপশন অনুরোধ সম্পন্ন হয়েছে।';
+$labels['mailman_subscribe_failed'] = 'সেই তালিকায় সাবস্ক্রাইব করা যায়নি।';
+$labels['mailman_subscribe_unavailable'] = 'সাবস্ক্রিপশনগুলি নিষ্ক্রিয় বা বর্তমানে অনুপলব্ধ।';
+$labels['mailman_unsubscribe_success'] = 'তালিকা থেকে সদস্যতা বাতিল করা হয়েছে।';
+$labels['mailman_unsubscribe_failed'] = 'সেই তালিকা থেকে সাবস্ক্রিপশন বাতিল করা যাচ্ছে না।';
+$labels['mailman_unsubscribe_unavailable'] = 'আনসাবস্ক্রাইব কার্যক্রম নিষ্ক্রিয় বা বর্তমানে অনুপলব্ধ।';
+$labels['mailman_no_identity'] = 'কোনও ব্যবহারযোগ্য প্রেরক পরিচয় পাওয়া যায়নি।';
+$labels['mailman_compose_widget_empty'] = 'কোনও স্বীকৃত Mailman তালিকা প্রাপক নেই।';
+$labels['mailman_detection_disabled'] = 'মেইলম্যান কম্পোজ সনাক্তকরণ নিষ্ক্রিয় করা হয়েছে।';
+$labels['invalidrequest'] = 'অবৈধ অনুরোধ।';
+$labels['mailman_template_none'] = 'কোনো টেমপ্লেট নেই';
+$labels['mailman_owner_tools_title'] = 'প্রেরণের বিকল্পসমূহ তালিকাভুক্ত করুন';
+$labels['mailman_owner_target_prefix'] = 'প্রেরণের জন্য:';
+$labels['mailman_owner_option_require_subject'] = 'প্রেরণের আগে একটি বিষয় বাধ্যতামূলক করুন';
+$labels['mailman_owner_option_confirm_send'] = 'প্রেরণের আগে নিশ্চিতকরণ দেখান';
+$labels['mailman_owner_option_append_footer'] = 'আনসাবস্ক্রাইব ফুটার সংযুক্ত করুন';
+$labels['mailman_owner_preflight_missing_subject'] = 'অনুগ্রহ করে কোনো তালিকায় পাঠানোর আগে একটি বিষয় যোগ করুন।';
+$labels['mailman_owner_preflight_confirm_send'] = 'নির্বাচিত তালিকাভুক্ত প্রাপকদের এই বার্তাটি পাঠাবেন?';
+?>

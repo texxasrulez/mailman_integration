@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Listor';
+$labels['mailman_my_lists'] = 'Mina listor';
+$labels['mailman_available_lists'] = 'Tillgängliga listor';
+$labels['mailman_debug_title'] = 'Diagnostik';
+$labels['mailman_select_list'] = 'Välj en e-postlista för att se dess detaljer.';
+$labels['mailman_no_lists'] = 'Inga abonnemangslistor hittades för din aktiva identitet.';
+$labels['mailman_no_directory_lists'] = 'Inga bläddringsbara listor är tillgängliga för närvarande.';
+$labels['mailman_archives'] = 'Arkiv';
+$labels['mailman_subscribe'] = 'Prenumerera';
+$labels['mailman_unsubscribe'] = 'Avsluta prenumeration';
+$labels['mailman_send_to_list'] = 'Skicka till lista';
+$labels['mailman_actions_unavailable'] = 'Liståtgärder är för närvarande inte tillgängliga.';
+$labels['mailman_status_ok'] = 'Mailman är nåbar.';
+$labels['mailman_status_degraded'] = 'Mailman är inte tillgänglig. Läs- och skrivåtgärder är begränsade.';
+$labels['mailman_not_configured'] = 'Mailman-integrationen är inte konfigurerad.';
+$labels['mailman_subscribe_success'] = 'Prenumerationsbegäran slutförd.';
+$labels['mailman_subscribe_failed'] = 'Det går inte att prenumerera på den listan.';
+$labels['mailman_subscribe_unavailable'] = 'Prenumerationer är inaktiverade eller för närvarande inte tillgängliga.';
+$labels['mailman_unsubscribe_success'] = 'Avregistrerad från listan.';
+$labels['mailman_unsubscribe_failed'] = 'Det går inte att avregistrera sig från den listan.';
+$labels['mailman_unsubscribe_unavailable'] = 'Åtgärder för att avsluta prenumerationen är inaktiverade eller för närvarande inte tillgängliga.';
+$labels['mailman_no_identity'] = 'Ingen användbar avsändaridentitet hittades.';
+$labels['mailman_compose_widget_empty'] = 'Inga erkända mottagare av Mailman-listan.';
+$labels['mailman_detection_disabled'] = 'Mailman compose detection är avaktiverat.';
+$labels['invalidrequest'] = 'Ogiltig begäran.';
+$labels['mailman_template_none'] = 'Ingen mall';
+$labels['mailman_owner_tools_title'] = 'Lista sändningsalternativ';
+$labels['mailman_owner_target_prefix'] = 'Skickar till:';
+$labels['mailman_owner_option_require_subject'] = 'Kräv ett ämne innan du skickar';
+$labels['mailman_owner_option_confirm_send'] = 'Visa bekräftelse innan du skickar';
+$labels['mailman_owner_option_append_footer'] = 'Lägg till sidfot för avregistrering';
+$labels['mailman_owner_preflight_missing_subject'] = 'Lägg till ett ämne innan du skickar till en lista.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Skicka detta meddelande till de valda mottagarna i listan?';
+?>

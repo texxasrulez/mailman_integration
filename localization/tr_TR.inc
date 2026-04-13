@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Listeler';
+$labels['mailman_my_lists'] = 'Listelerim';
+$labels['mailman_available_lists'] = 'Mevcut Listeler';
+$labels['mailman_debug_title'] = 'Teşhis';
+$labels['mailman_select_list'] = 'Ayrıntılarını görmek için bir posta listesi seçin.';
+$labels['mailman_no_lists'] = 'Aktif kimliğiniz için abone olunan liste bulunamadı.';
+$labels['mailman_no_directory_lists'] = 'Şu anda göz atılabilir liste bulunmamaktadır.';
+$labels['mailman_archives'] = 'Arşivler';
+$labels['mailman_subscribe'] = 'Abone Olun';
+$labels['mailman_unsubscribe'] = 'Abonelikten çık';
+$labels['mailman_send_to_list'] = 'Listeye Gönder';
+$labels['mailman_actions_unavailable'] = 'Liste eylemleri şu anda kullanılamıyor.';
+$labels['mailman_status_ok'] = 'Mailman\'a ulaşılabilir.';
+$labels['mailman_status_degraded'] = 'Mailman kullanılamıyor. Okuma ve yazma eylemleri sınırlıdır.';
+$labels['mailman_not_configured'] = 'Mailman entegrasyonu yapılandırılmamış.';
+$labels['mailman_subscribe_success'] = 'Abonelik talebi tamamlandı.';
+$labels['mailman_subscribe_failed'] = 'Bu listeye abone olunamıyor.';
+$labels['mailman_subscribe_unavailable'] = 'Abonelikler devre dışı veya şu anda kullanılamıyor.';
+$labels['mailman_unsubscribe_success'] = 'Listeden aboneliğimi iptal ettim.';
+$labels['mailman_unsubscribe_failed'] = 'Bu listeden çıkılamıyor.';
+$labels['mailman_unsubscribe_unavailable'] = 'Abonelikten çıkma işlemleri devre dışı bırakılmış veya şu anda kullanılamıyor.';
+$labels['mailman_no_identity'] = 'Kullanılabilir bir gönderici kimliği bulunamadı.';
+$labels['mailman_compose_widget_empty'] = 'Tanınan Mailman listesi alıcısı yok.';
+$labels['mailman_detection_disabled'] = 'Mailman oluşturma algılaması devre dışı bırakıldı.';
+$labels['invalidrequest'] = 'Geçersiz istek.';
+$labels['mailman_template_none'] = 'Şablon yok';
+$labels['mailman_owner_tools_title'] = 'Gönderme seçeneklerini listele';
+$labels['mailman_owner_target_prefix'] = 'Gönderiyorum:';
+$labels['mailman_owner_option_require_subject'] = 'Göndermeden önce bir konu isteyin';
+$labels['mailman_owner_option_confirm_send'] = 'Göndermeden önce onayı göster';
+$labels['mailman_owner_option_append_footer'] = 'Abonelikten çıkma altbilgisi ekle';
+$labels['mailman_owner_preflight_missing_subject'] = 'Lütfen bir listeye göndermeden önce bir konu ekleyin.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Bu mesajı seçilen liste alıcılarına göndereyim mi?';
+?>

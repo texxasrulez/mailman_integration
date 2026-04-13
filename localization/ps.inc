@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'لستونه';
+$labels['mailman_my_lists'] = 'زما لیستونه';
+$labels['mailman_available_lists'] = 'موجود لیستونه';
+$labels['mailman_debug_title'] = 'تشخیص';
+$labels['mailman_select_list'] = 'د یوې میلېستې د جزیاتو لیدلو لپاره هغه وټاکئ.';
+$labels['mailman_no_lists'] = 'ستاسو د فعال هویت لپاره هیڅ ګډون شوي لیستونه وموندل شول.';
+$labels['mailman_no_directory_lists'] = 'اوسمهال د لیدلو وړ لیستونه شتون نلري.';
+$labels['mailman_archives'] = 'آرشیفونه';
+$labels['mailman_subscribe'] = 'ګډون';
+$labels['mailman_unsubscribe'] = 'ګډون لغوه کړئ';
+$labels['mailman_send_to_list'] = 'لست ته واستوئ';
+$labels['mailman_actions_unavailable'] = 'د لیست کړنې اوسمهال شتون نلري.';
+$labels['mailman_status_ok'] = 'میلمن ته رسیدل کیدای شي.';
+$labels['mailman_status_degraded'] = 'میلمن شتون نلري. د لوستلو او لیکلو کړنې محدودې دي.';
+$labels['mailman_not_configured'] = 'د میلمن انټیګریشن نه دی ترتیب شوی.';
+$labels['mailman_subscribe_success'] = 'د ګډون غوښتنه بشپړه شوه.';
+$labels['mailman_subscribe_failed'] = 'د هغې لیست ګډون نشي کیدای.';
+$labels['mailman_subscribe_unavailable'] = 'ګډونونه غیر فعال دي یا اوس مهال شتون نلري.';
+$labels['mailman_unsubscribe_success'] = 'له لیست څخه وتلی';
+$labels['mailman_unsubscribe_failed'] = 'له هغې لېستې څخه د نوم ایستلو توان نشته.';
+$labels['mailman_unsubscribe_unavailable'] = 'د غړیتوب ختمولو کړنې غیر فعالې یا اوس مهال شتون نلري.';
+$labels['mailman_no_identity'] = 'د لېږونکي کومه د کارونې وړ پېژندنه وموندل شوه.';
+$labels['mailman_compose_widget_empty'] = 'د میلمن لیست هیڅ پېژندل شوي ترلاسه کوونکي نشته.';
+$labels['mailman_detection_disabled'] = 'د میلمن کمپوز کشف غیر فعال دی.';
+$labels['invalidrequest'] = 'غوښتنه ناسمه ده.';
+$labels['mailman_template_none'] = 'هیڅ قالب نشته';
+$labels['mailman_owner_tools_title'] = 'د لیږلو اختیارونه لیست کړئ';
+$labels['mailman_owner_target_prefix'] = 'لېږل د:';
+$labels['mailman_owner_option_require_subject'] = 'لېږلو څخه مخکې موضوع اړینه ده';
+$labels['mailman_owner_option_confirm_send'] = 'لېږلو دمخه تایید وښایاست';
+$labels['mailman_owner_option_append_footer'] = 'د غړیتوب ختمولو پښه ور اضافه کړئ';
+$labels['mailman_owner_preflight_missing_subject'] = 'مهرباني وکړئ لیست ته د لیږلو دمخه یو موضوع اضافه کړئ.';
+$labels['mailman_owner_preflight_confirm_send'] = 'دا پیغام غوره شوي لیست ته واستو؟';
+?>

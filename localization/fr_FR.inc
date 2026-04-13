@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Listes';
+$labels['mailman_my_lists'] = 'Mes listes';
+$labels['mailman_available_lists'] = 'Listes disponibles';
+$labels['mailman_debug_title'] = 'Diagnostics';
+$labels['mailman_select_list'] = 'Sélectionnez une liste de diffusion pour en voir les détails.';
+$labels['mailman_no_lists'] = 'Aucune liste d\'abonnés n\'a été trouvée pour votre identité active.';
+$labels['mailman_no_directory_lists'] = 'Aucune liste consultable n\'est actuellement disponible.';
+$labels['mailman_archives'] = 'Archives';
+$labels['mailman_subscribe'] = 'S\'abonner';
+$labels['mailman_unsubscribe'] = 'Se désabonner';
+$labels['mailman_send_to_list'] = 'Envoyer à la liste';
+$labels['mailman_actions_unavailable'] = 'Les actions de la liste sont actuellement indisponibles.';
+$labels['mailman_status_ok'] = 'Mailman est joignable.';
+$labels['mailman_status_degraded'] = 'Mailman n\'est pas disponible. Les actions de lecture et d\'écriture sont limitées.';
+$labels['mailman_not_configured'] = 'L\'intégration de Mailman n\'est pas configurée.';
+$labels['mailman_subscribe_success'] = 'Demande d\'abonnement complétée.';
+$labels['mailman_subscribe_failed'] = 'Impossible de s\'abonner à cette liste.';
+$labels['mailman_subscribe_unavailable'] = 'Les abonnements sont désactivés ou actuellement indisponibles.';
+$labels['mailman_unsubscribe_success'] = 'Désinscription de la liste.';
+$labels['mailman_unsubscribe_failed'] = 'Impossible de se désinscrire de cette liste.';
+$labels['mailman_unsubscribe_unavailable'] = 'Les actions de désabonnement sont désactivées ou actuellement indisponibles.';
+$labels['mailman_no_identity'] = 'Aucune identité d\'expéditeur utilisable n\'a été trouvée.';
+$labels['mailman_compose_widget_empty'] = 'Aucun destinataire reconnu de la liste Mailman.';
+$labels['mailman_detection_disabled'] = 'La détection de composition de Mailman est désactivée.';
+$labels['invalidrequest'] = 'Demande non valide.';
+$labels['mailman_template_none'] = 'Pas de modèle';
+$labels['mailman_owner_tools_title'] = 'Liste des options d\'envoi';
+$labels['mailman_owner_target_prefix'] = 'Envoi à :';
+$labels['mailman_owner_option_require_subject'] = 'Demande un sujet avant l\'envoi';
+$labels['mailman_owner_option_confirm_send'] = 'Afficher la confirmation avant l\'envoi';
+$labels['mailman_owner_option_append_footer'] = 'Ajouter un pied de page de désabonnement';
+$labels['mailman_owner_preflight_missing_subject'] = 'Merci d\'ajouter un sujet avant d\'envoyer à une liste.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Envoyer ce message aux destinataires de la liste sélectionnée ?';
+?>

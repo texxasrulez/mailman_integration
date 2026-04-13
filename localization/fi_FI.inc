@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Luettelot';
+$labels['mailman_my_lists'] = 'Omat listat';
+$labels['mailman_available_lists'] = 'Käytettävissä olevat luettelot';
+$labels['mailman_debug_title'] = 'Diagnostiikka';
+$labels['mailman_select_list'] = 'Valitse postituslista nähdäksesi sen tiedot.';
+$labels['mailman_no_lists'] = 'Aktiiviselle henkilöllisyydellesi ei löytynyt tilattuja listoja.';
+$labels['mailman_no_directory_lists'] = 'Selattavia luetteloita ei ole tällä hetkellä saatavilla.';
+$labels['mailman_archives'] = 'Arkisto';
+$labels['mailman_subscribe'] = 'Tilaa';
+$labels['mailman_unsubscribe'] = 'Poistu tilauksesta';
+$labels['mailman_send_to_list'] = 'Lähetä luetteloon';
+$labels['mailman_actions_unavailable'] = 'Listatoiminnot eivät ole tällä hetkellä käytettävissä.';
+$labels['mailman_status_ok'] = 'Mailman on tavoitettavissa.';
+$labels['mailman_status_degraded'] = 'Mailman ei ole käytettävissä. Luku- ja kirjoitustoimintoja on rajoitettu.';
+$labels['mailman_not_configured'] = 'Mailman-integraatiota ei ole määritetty.';
+$labels['mailman_subscribe_success'] = 'Tilauspyyntö suoritettu.';
+$labels['mailman_subscribe_failed'] = 'En pysty tilaamaan kyseistä listaa.';
+$labels['mailman_subscribe_unavailable'] = 'Tilaukset on poistettu käytöstä tai ne eivät ole tällä hetkellä saatavilla.';
+$labels['mailman_unsubscribe_success'] = 'Poistunut listalta.';
+$labels['mailman_unsubscribe_failed'] = 'En voi peruuttaa tilausta kyseiseltä listalta.';
+$labels['mailman_unsubscribe_unavailable'] = 'Peruutustoiminnot on poistettu käytöstä tai ne eivät ole tällä hetkellä käytettävissä.';
+$labels['mailman_no_identity'] = 'Käyttökelpoista lähettäjän tunnistetta ei löytynyt.';
+$labels['mailman_compose_widget_empty'] = 'Ei tunnistettuja Mailman-listan vastaanottajia.';
+$labels['mailman_detection_disabled'] = 'Mailman compose -tunnistus on poistettu käytöstä.';
+$labels['invalidrequest'] = 'Virheellinen pyyntö.';
+$labels['mailman_template_none'] = 'Ei mallia';
+$labels['mailman_owner_tools_title'] = 'Luettelo lähetysvaihtoehdoista';
+$labels['mailman_owner_target_prefix'] = 'Lähetys osoitteeseen:';
+$labels['mailman_owner_option_require_subject'] = 'Vaadi aihe ennen lähettämistä';
+$labels['mailman_owner_option_confirm_send'] = 'Näytä vahvistus ennen lähettämistä';
+$labels['mailman_owner_option_append_footer'] = 'Liitä tilauksen peruuttamisen alatunniste';
+$labels['mailman_owner_preflight_missing_subject'] = 'Lisää aihe ennen lähettämistä listalle.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Lähetä tämä viesti valituille vastaanottajille?';
+?>

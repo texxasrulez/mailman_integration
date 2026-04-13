@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Listas';
+$labels['mailman_my_lists'] = 'Mis listas';
+$labels['mailman_available_lists'] = 'Listas disponibles';
+$labels['mailman_debug_title'] = 'Diagnóstico';
+$labels['mailman_select_list'] = 'Selecciona una lista de correo para ver sus detalles.';
+$labels['mailman_no_lists'] = 'No se encontraron listas a las que esté suscrito para su identidad activa.';
+$labels['mailman_no_directory_lists'] = 'Actualmente no hay listas disponibles para consultar.';
+$labels['mailman_archives'] = 'Archivos';
+$labels['mailman_subscribe'] = 'Suscríbete';
+$labels['mailman_unsubscribe'] = 'Cancelar suscripción';
+$labels['mailman_send_to_list'] = 'Enviar a la lista';
+$labels['mailman_actions_unavailable'] = 'Las acciones de la lista no están disponibles en este momento.';
+$labels['mailman_status_ok'] = 'Se puede contactar con Mailman.';
+$labels['mailman_status_degraded'] = 'Mailman no está disponible. Las acciones de lectura y escritura están limitadas.';
+$labels['mailman_not_configured'] = 'La integración con Mailman no está configurada.';
+$labels['mailman_subscribe_success'] = 'Solicitud de suscripción completada.';
+$labels['mailman_subscribe_failed'] = 'No se puede suscribir a esa lista.';
+$labels['mailman_subscribe_unavailable'] = 'Las suscripciones están desactivadas o no están disponibles en este momento.';
+$labels['mailman_unsubscribe_success'] = 'Se ha dado de baja de la lista.';
+$labels['mailman_unsubscribe_failed'] = 'No puedo darme de baja de esa lista.';
+$labels['mailman_unsubscribe_unavailable'] = 'Las acciones para darse de baja están desactivadas o no están disponibles en este momento.';
+$labels['mailman_no_identity'] = 'No se ha encontrado ninguna identidad de remitente válida.';
+$labels['mailman_compose_widget_empty'] = 'No se han encontrado destinatarios de la lista de Mailman.';
+$labels['mailman_detection_disabled'] = 'La detección de redacción en Mailman está desactivada.';
+$labels['invalidrequest'] = 'Solicitud no válida.';
+$labels['mailman_template_none'] = 'Sin plantilla';
+$labels['mailman_owner_tools_title'] = 'Mostrar opciones de envío';
+$labels['mailman_owner_target_prefix'] = 'Enviar a:';
+$labels['mailman_owner_option_require_subject'] = 'Es necesario indicar un asunto antes de enviar';
+$labels['mailman_owner_option_confirm_send'] = 'Mostrar confirmación antes de enviar';
+$labels['mailman_owner_option_append_footer'] = 'Añadir pie de página de cancelación de suscripción';
+$labels['mailman_owner_preflight_missing_subject'] = 'Por favor, incluye un asunto antes de enviar un mensaje a la lista.';
+$labels['mailman_owner_preflight_confirm_send'] = '¿Desea enviar este mensaje a los destinatarios de la lista seleccionada?';
+?>

@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'सूचियाँ';
+$labels['mailman_my_lists'] = 'मेरी सूचियाँ';
+$labels['mailman_available_lists'] = 'उपलब्ध सूचियाँ';
+$labels['mailman_debug_title'] = 'निदान';
+$labels['mailman_select_list'] = 'किसी मेलिंग सूची का विवरण देखने के लिए उसे चुनें।';
+$labels['mailman_no_lists'] = 'आपकी सक्रिय पहचान के लिए कोई सदस्यता सूची नहीं मिली।';
+$labels['mailman_no_directory_lists'] = 'वर्तमान में कोई ब्राउज़ करने योग्य सूचियाँ उपलब्ध नहीं हैं।';
+$labels['mailman_archives'] = 'पुरालेख';
+$labels['mailman_subscribe'] = 'सब्सक्राइब करें';
+$labels['mailman_unsubscribe'] = 'अनसब्सक्राइब';
+$labels['mailman_send_to_list'] = 'सूची में भेजें';
+$labels['mailman_actions_unavailable'] = 'सूची क्रियाएँ वर्तमान में अनुपलब्ध हैं।';
+$labels['mailman_status_ok'] = 'मेलमैन से संपर्क किया जा सकता है।';
+$labels['mailman_status_degraded'] = 'मेलमैन उपलब्ध नहीं है। पढ़ने और लिखने की क्रियाएँ सीमित हैं।';
+$labels['mailman_not_configured'] = 'मेलमैन एकीकरण कॉन्फ़िगर नहीं किया गया है।';
+$labels['mailman_subscribe_success'] = 'सदस्यता अनुरोध पूरा हो गया।';
+$labels['mailman_subscribe_failed'] = 'उस सूची की सदस्यता नहीं ले सके।';
+$labels['mailman_subscribe_unavailable'] = 'सब्सक्रिप्शन अक्षम हैं या वर्तमान में उपलब्ध नहीं हैं।';
+$labels['mailman_unsubscribe_success'] = 'सूची से सदस्यता रद्द कर दी गई।';
+$labels['mailman_unsubscribe_failed'] = 'उस सूची से सदस्यता रद्द नहीं कर पा रहे हैं।';
+$labels['mailman_unsubscribe_unavailable'] = 'अनसब्सक्राइब क्रियाएँ अक्षम या वर्तमान में अनुपलब्ध हैं।';
+$labels['mailman_no_identity'] = 'कोई उपयोग योग्य प्रेषक पहचान नहीं मिली।';
+$labels['mailman_compose_widget_empty'] = 'कोई मान्यता प्राप्त मेलमैन सूची प्राप्तकर्ता नहीं।';
+$labels['mailman_detection_disabled'] = 'मेलमैन कंपाज़ डिटेक्शन अक्षम है।';
+$labels['invalidrequest'] = 'अमान्य अनुरोध।';
+$labels['mailman_template_none'] = 'कोई टेम्पलेट नहीं';
+$labels['mailman_owner_tools_title'] = 'भेजने के विकल्प सूचीबद्ध करें';
+$labels['mailman_owner_target_prefix'] = 'भेजने के लिए:';
+$labels['mailman_owner_option_require_subject'] = 'भेजने से पहले विषय अनिवार्य करें';
+$labels['mailman_owner_option_confirm_send'] = 'भेजने से पहले पुष्टि दिखाएँ';
+$labels['mailman_owner_option_append_footer'] = 'अनसब्सक्राइब फ़ुटर जोड़ें';
+$labels['mailman_owner_preflight_missing_subject'] = 'कृपया सूची में भेजने से पहले एक विषय जोड़ें।';
+$labels['mailman_owner_preflight_confirm_send'] = 'क्या यह संदेश चयनित सूची के प्राप्तकर्ताओं को भेजा जाए?';
+?>

@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Листе';
+$labels['mailman_my_lists'] = 'Моје листе';
+$labels['mailman_available_lists'] = 'Доступне листе';
+$labels['mailman_debug_title'] = 'Дијагностика';
+$labels['mailman_select_list'] = 'Изаберите мејлинг листу да бисте видели њене детаље.';
+$labels['mailman_no_lists'] = 'За ваш активни идентитет нису пронађене претплаћене листе.';
+$labels['mailman_no_directory_lists'] = 'Тренутно нису доступне листе за прегледање.';
+$labels['mailman_archives'] = 'Архива';
+$labels['mailman_subscribe'] = 'Претплатите се';
+$labels['mailman_unsubscribe'] = 'Откажи претплату';
+$labels['mailman_send_to_list'] = 'Пошаљи на листу';
+$labels['mailman_actions_unavailable'] = 'Листа акција је тренутно недоступна.';
+$labels['mailman_status_ok'] = 'Мејлмен је доступан.';
+$labels['mailman_status_degraded'] = 'Мејлмен није доступан. Читање и писање су ограничени.';
+$labels['mailman_not_configured'] = 'Интеграција Mailman-а није конфигурисана.';
+$labels['mailman_subscribe_success'] = 'Захтев за претплату је завршен.';
+$labels['mailman_subscribe_failed'] = 'Не могу да се претплатим на ту листу.';
+$labels['mailman_subscribe_unavailable'] = 'Претплате су онемогућене или тренутно недоступне.';
+$labels['mailman_unsubscribe_success'] = 'Отказио претплату са листе.';
+$labels['mailman_unsubscribe_failed'] = 'Не могу да се одјавим са те листе.';
+$labels['mailman_unsubscribe_unavailable'] = 'Акције одјаве су онемогућене или тренутно недоступне.';
+$labels['mailman_no_identity'] = 'Није пронађен употребљив идентитет пошиљаоца.';
+$labels['mailman_compose_widget_empty'] = 'Нема признатих прималаца Mailman листе.';
+$labels['mailman_detection_disabled'] = 'Откривање састављања поштанских бројева је онемогућено.';
+$labels['invalidrequest'] = 'Неважећи захтев.';
+$labels['mailman_template_none'] = 'Нема шаблона';
+$labels['mailman_owner_tools_title'] = 'Списак опција за слање';
+$labels['mailman_owner_target_prefix'] = 'Слање на:';
+$labels['mailman_owner_option_require_subject'] = 'Захтевајте тему пре слања';
+$labels['mailman_owner_option_confirm_send'] = 'Прикажи потврду пре слања';
+$labels['mailman_owner_option_append_footer'] = 'Додајте стоп-обавештење у подножје';
+$labels['mailman_owner_preflight_missing_subject'] = 'Молимо вас да додате тему пре слања поруке листи.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Пошаљите ову поруку одабраној листи прималаца?';
+?>

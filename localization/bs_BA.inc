@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Liste';
+$labels['mailman_my_lists'] = 'Moje liste';
+$labels['mailman_available_lists'] = 'Dostupne liste';
+$labels['mailman_debug_title'] = 'Dijagnostika';
+$labels['mailman_select_list'] = 'Odaberite mailing listu da vidite njene detalje.';
+$labels['mailman_no_lists'] = 'Nisu pronađene pretplaćene liste za vaš aktivni identitet.';
+$labels['mailman_no_directory_lists'] = 'Trenutno nisu dostupne liste za pregled.';
+$labels['mailman_archives'] = 'Arhiva';
+$labels['mailman_subscribe'] = 'Pretplati se';
+$labels['mailman_unsubscribe'] = 'Otkaži pretplatu';
+$labels['mailman_send_to_list'] = 'Pošalji na listu';
+$labels['mailman_actions_unavailable'] = 'Akcije liste su trenutno nedostupne.';
+$labels['mailman_status_ok'] = 'Mailman je dostupan.';
+$labels['mailman_status_degraded'] = 'Mailman nije dostupan. Čitanje i pisanje su ograničeni.';
+$labels['mailman_not_configured'] = 'Integracija Mailmana nije konfigurisana.';
+$labels['mailman_subscribe_success'] = 'Zahtjev za pretplatu je dovršen.';
+$labels['mailman_subscribe_failed'] = 'Ne mogu se pretplatiti na tu listu.';
+$labels['mailman_subscribe_unavailable'] = 'Pretplate su onemogućene ili trenutno nedostupne.';
+$labels['mailman_unsubscribe_success'] = 'Odjavio se sa liste.';
+$labels['mailman_unsubscribe_failed'] = 'Nije moguće otkazati pretplatu na tu listu.';
+$labels['mailman_unsubscribe_unavailable'] = 'Akcije otkazivanja pretplate su onemogućene ili trenutno nedostupne.';
+$labels['mailman_no_identity'] = 'Nije pronađen upotrebljiv identitet pošiljaoca.';
+$labels['mailman_compose_widget_empty'] = 'Nema prepoznatih primalaca Mailman liste.';
+$labels['mailman_detection_disabled'] = 'Detekcija Mailmana je onemogućena.';
+$labels['invalidrequest'] = 'Neispravan zahtjev.';
+$labels['mailman_template_none'] = 'Nema predloška';
+$labels['mailman_owner_tools_title'] = 'Popis opcija slanja';
+$labels['mailman_owner_target_prefix'] = 'Slanje na:';
+$labels['mailman_owner_option_require_subject'] = 'Zahtijevati subjekt prije slanja';
+$labels['mailman_owner_option_confirm_send'] = 'Prikaži potvrdu prije slanja';
+$labels['mailman_owner_option_append_footer'] = 'Dodaj stop-pretplati se podnožje';
+$labels['mailman_owner_preflight_missing_subject'] = 'Molimo vas da dodate predmet prije slanja poruke na listu.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Pošaljite ovu poruku odabranim primalcima na listi?';
+?>

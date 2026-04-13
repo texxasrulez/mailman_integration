@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Seznamy';
+$labels['mailman_my_lists'] = 'Moje seznamy';
+$labels['mailman_available_lists'] = 'Dostupné seznamy';
+$labels['mailman_debug_title'] = 'Diagnostika';
+$labels['mailman_select_list'] = 'Výběrem poštovního seznamu zobrazíte jeho podrobnosti.';
+$labels['mailman_no_lists'] = 'Pro vaši aktivní identitu nebyly nalezeny žádné přihlášené seznamy.';
+$labels['mailman_no_directory_lists'] = 'V současné době nejsou k dispozici žádné seznamy k procházení.';
+$labels['mailman_archives'] = 'Archivy';
+$labels['mailman_subscribe'] = 'Přihlaste se k odběru na';
+$labels['mailman_unsubscribe'] = 'Odhlásit se z odběru';
+$labels['mailman_send_to_list'] = 'Odeslat do seznamu';
+$labels['mailman_actions_unavailable'] = 'Akce seznamu nejsou v současné době k dispozici.';
+$labels['mailman_status_ok'] = 'Mailman je dosažitelný.';
+$labels['mailman_status_degraded'] = 'Mailman není k dispozici. Akce čtení a zápisu jsou omezeny.';
+$labels['mailman_not_configured'] = 'Integrace služby Mailman není nakonfigurována.';
+$labels['mailman_subscribe_success'] = 'Žádost o předplatné dokončena.';
+$labels['mailman_subscribe_failed'] = 'Nelze se přihlásit k odběru tohoto seznamu.';
+$labels['mailman_subscribe_unavailable'] = 'Předplatné je zakázáno nebo momentálně nedostupné.';
+$labels['mailman_unsubscribe_success'] = 'Odhlášení ze seznamu.';
+$labels['mailman_unsubscribe_failed'] = 'Nelze se z tohoto seznamu odhlásit.';
+$labels['mailman_unsubscribe_unavailable'] = 'Akce pro zrušení odběru jsou zakázány nebo nejsou v současné době k dispozici.';
+$labels['mailman_no_identity'] = 'Nebyla nalezena žádná použitelná identita odesílatele.';
+$labels['mailman_compose_widget_empty'] = 'Žádní rozpoznaní příjemci seznamu Mailman.';
+$labels['mailman_detection_disabled'] = 'Detekce sestavení aplikace Mailman je zakázána.';
+$labels['invalidrequest'] = 'Neplatný požadavek.';
+$labels['mailman_template_none'] = 'Žádná šablona';
+$labels['mailman_owner_tools_title'] = 'Seznam možností odeslání';
+$labels['mailman_owner_target_prefix'] = 'Odeslání na adresu:';
+$labels['mailman_owner_option_require_subject'] = 'Vyžadovat předmět před odesláním';
+$labels['mailman_owner_option_confirm_send'] = 'Zobrazit potvrzení před odesláním';
+$labels['mailman_owner_option_append_footer'] = 'Přidání patičky pro odhlášení odběru';
+$labels['mailman_owner_preflight_missing_subject'] = 'Před odesláním na seznam přidejte předmět.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Odeslat tuto zprávu vybraným příjemcům v seznamu?';
+?>

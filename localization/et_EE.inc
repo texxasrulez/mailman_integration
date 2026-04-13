@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Loetelud';
+$labels['mailman_my_lists'] = 'Minu nimekirjad';
+$labels['mailman_available_lists'] = 'Saadaolevad nimekirjad';
+$labels['mailman_debug_title'] = 'Diagnostika';
+$labels['mailman_select_list'] = 'Valige postiloend, et näha selle üksikasju.';
+$labels['mailman_no_lists'] = 'Teie aktiivse identiteedi jaoks ei leitud ühtegi tellitud nimekirja.';
+$labels['mailman_no_directory_lists'] = 'Praegu ei ole sirvitavad nimekirjad saadaval.';
+$labels['mailman_archives'] = 'Arhiiv';
+$labels['mailman_subscribe'] = 'Telli';
+$labels['mailman_unsubscribe'] = 'Loobu';
+$labels['mailman_send_to_list'] = 'Saada nimekirja';
+$labels['mailman_actions_unavailable'] = 'Loetelu tegevused ei ole praegu saadaval.';
+$labels['mailman_status_ok'] = 'Mailman on kättesaadav.';
+$labels['mailman_status_degraded'] = 'Mailman ei ole saadaval. Lugemis- ja kirjutamistoimingud on piiratud.';
+$labels['mailman_not_configured'] = 'Mailmani integratsioon ei ole konfigureeritud.';
+$labels['mailman_subscribe_success'] = 'Tellimuse taotlus on lõpetatud.';
+$labels['mailman_subscribe_failed'] = 'Ei ole võimalik seda nimekirja tellida.';
+$labels['mailman_subscribe_unavailable'] = 'Tellimused on välja lülitatud või ei ole hetkel saadaval.';
+$labels['mailman_unsubscribe_success'] = 'Loetelust välja arvatud.';
+$labels['mailman_unsubscribe_failed'] = 'Sellest nimekirjast ei ole võimalik loobuda.';
+$labels['mailman_unsubscribe_unavailable'] = 'Tellimuse tühistamise toimingud on välja lülitatud või ei ole praegu saadaval.';
+$labels['mailman_no_identity'] = 'Kasutatavat saatja identiteeti ei leitud.';
+$labels['mailman_compose_widget_empty'] = 'Mailmani nimekirjas ei ole tunnustatud saajaid.';
+$labels['mailman_detection_disabled'] = 'Mailmani koostamise tuvastamine on välja lülitatud.';
+$labels['invalidrequest'] = 'Mittevajalik taotlus.';
+$labels['mailman_template_none'] = 'Ei ole malli';
+$labels['mailman_owner_tools_title'] = 'Saatmisvõimaluste loetelu';
+$labels['mailman_owner_target_prefix'] = 'Saatmine:';
+$labels['mailman_owner_option_require_subject'] = 'Nõuab teemat enne saatmist';
+$labels['mailman_owner_option_confirm_send'] = 'Näita kinnitust enne saatmist';
+$labels['mailman_owner_option_append_footer'] = 'Lisa tellimuse tühistamise jalusleht';
+$labels['mailman_owner_preflight_missing_subject'] = 'Palun lisage enne nimekirja saatmist teema.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Saada see sõnum valitud nimekirja saajatele?';
+?>

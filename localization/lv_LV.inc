@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Saraksti';
+$labels['mailman_my_lists'] = 'Mani saraksti';
+$labels['mailman_available_lists'] = 'Pieejamie saraksti';
+$labels['mailman_debug_title'] = 'Diagnostika';
+$labels['mailman_select_list'] = 'Izvēlieties adresātu sarakstu, lai skatītu tā informāciju.';
+$labels['mailman_no_lists'] = 'Jūsu aktīvajai identitātei nav atrasti nekādi abonētie saraksti.';
+$labels['mailman_no_directory_lists'] = 'Pašlaik nav pieejami pārlūkojami saraksti.';
+$labels['mailman_archives'] = 'Arhīvi';
+$labels['mailman_subscribe'] = 'Abonēt';
+$labels['mailman_unsubscribe'] = 'Atteikties no';
+$labels['mailman_send_to_list'] = 'Nosūtīt uz sarakstu';
+$labels['mailman_actions_unavailable'] = 'Saraksta darbības pašlaik nav pieejamas.';
+$labels['mailman_status_ok'] = 'Pastkastnieks ir sasniedzams.';
+$labels['mailman_status_degraded'] = 'Pastnieks nav pieejams. Lasīšanas un rakstīšanas darbības ir ierobežotas.';
+$labels['mailman_not_configured'] = 'Mailman integrācija nav konfigurēta.';
+$labels['mailman_subscribe_success'] = 'Abonēšanas pieprasījums ir pabeigts.';
+$labels['mailman_subscribe_failed'] = 'Nevar abonēt šo sarakstu.';
+$labels['mailman_subscribe_unavailable'] = 'Abonēšana ir atspējota vai pašlaik nav pieejama.';
+$labels['mailman_unsubscribe_success'] = 'Atrakstījies no saraksta.';
+$labels['mailman_unsubscribe_failed'] = 'Nevarat atteikties no šī saraksta.';
+$labels['mailman_unsubscribe_unavailable'] = 'Atteikšanās no abonēšanas darbības ir atspējotas vai pašlaik nav pieejamas.';
+$labels['mailman_no_identity'] = 'Netika atrasta izmantojama sūtītāja identitāte.';
+$labels['mailman_compose_widget_empty'] = 'Nav atpazītu Mailman saraksta saņēmēju.';
+$labels['mailman_detection_disabled'] = 'Mailman compose noteikšana ir atspējota.';
+$labels['invalidrequest'] = 'Nederīgs pieprasījums.';
+$labels['mailman_template_none'] = 'Nav veidnes';
+$labels['mailman_owner_tools_title'] = 'Saraksta nosūtīšanas opcijas';
+$labels['mailman_owner_target_prefix'] = 'Nosūtot uz:';
+$labels['mailman_owner_option_require_subject'] = 'Pieprasīt tēmu pirms nosūtīšanas';
+$labels['mailman_owner_option_confirm_send'] = 'Rādīt apstiprinājumu pirms nosūtīšanas';
+$labels['mailman_owner_option_append_footer'] = 'Pievienojiet atteikuma kājenes';
+$labels['mailman_owner_preflight_missing_subject'] = 'Pirms nosūtīšanas sarakstam pievienojiet tematu.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Nosūtīt šo ziņojumu izvēlētajiem saraksta saņēmējiem?';
+?>

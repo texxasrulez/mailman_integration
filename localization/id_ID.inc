@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Daftar';
+$labels['mailman_my_lists'] = 'Daftar Saya';
+$labels['mailman_available_lists'] = 'Daftar yang Tersedia';
+$labels['mailman_debug_title'] = 'Diagnostik';
+$labels['mailman_select_list'] = 'Pilih milis untuk melihat detailnya.';
+$labels['mailman_no_lists'] = 'Tidak ditemukan daftar langganan untuk identitas aktif Anda.';
+$labels['mailman_no_directory_lists'] = 'Saat ini tidak ada daftar yang dapat ditelusuri.';
+$labels['mailman_archives'] = 'Arsip';
+$labels['mailman_subscribe'] = 'Berlangganan';
+$labels['mailman_unsubscribe'] = 'Berhenti berlangganan';
+$labels['mailman_send_to_list'] = 'Kirim ke Daftar';
+$labels['mailman_actions_unavailable'] = 'Tindakan daftar saat ini tidak tersedia.';
+$labels['mailman_status_ok'] = 'Tukang pos dapat dihubungi.';
+$labels['mailman_status_degraded'] = 'Mailman tidak tersedia. Tindakan baca dan tulis dibatasi.';
+$labels['mailman_not_configured'] = 'Integrasi Mailman tidak dikonfigurasi.';
+$labels['mailman_subscribe_success'] = 'Permintaan berlangganan selesai.';
+$labels['mailman_subscribe_failed'] = 'Tidak dapat berlangganan ke daftar tersebut.';
+$labels['mailman_subscribe_unavailable'] = 'Langganan dinonaktifkan atau saat ini tidak tersedia.';
+$labels['mailman_unsubscribe_success'] = 'Berhenti berlangganan dari daftar.';
+$labels['mailman_unsubscribe_failed'] = 'Tidak dapat berhenti berlangganan dari daftar tersebut.';
+$labels['mailman_unsubscribe_unavailable'] = 'Tindakan berhenti berlangganan dinonaktifkan atau saat ini tidak tersedia.';
+$labels['mailman_no_identity'] = 'Tidak ditemukan identitas pengirim yang dapat digunakan.';
+$labels['mailman_compose_widget_empty'] = 'Tidak ada penerima daftar Mailman yang dikenali.';
+$labels['mailman_detection_disabled'] = 'Pendeteksian penulisan surat dinonaktifkan.';
+$labels['invalidrequest'] = 'Permintaan tidak valid.';
+$labels['mailman_template_none'] = 'Tidak ada templat';
+$labels['mailman_owner_tools_title'] = 'Daftar opsi pengiriman';
+$labels['mailman_owner_target_prefix'] = 'Mengirim ke:';
+$labels['mailman_owner_option_require_subject'] = 'Memerlukan subjek sebelum mengirim';
+$labels['mailman_owner_option_confirm_send'] = 'Tampilkan konfirmasi sebelum mengirim';
+$labels['mailman_owner_option_append_footer'] = 'Tambahkan footer berhenti berlangganan';
+$labels['mailman_owner_preflight_missing_subject'] = 'Harap tambahkan subjek sebelum mengirim ke daftar.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Kirim pesan ini ke penerima daftar yang dipilih?';
+?>

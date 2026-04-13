@@ -1,0 +1,36 @@
+<?php
+$labels = array();
+$labels['mailman_lists_title'] = 'Списки';
+$labels['mailman_my_lists'] = 'Мої списки';
+$labels['mailman_available_lists'] = 'Доступні списки';
+$labels['mailman_debug_title'] = 'Діагностика';
+$labels['mailman_select_list'] = 'Виберіть список розсилки, щоб переглянути його деталі.';
+$labels['mailman_no_lists'] = 'Для вашого активного облікового запису не знайдено жодного списку підписок.';
+$labels['mailman_no_directory_lists'] = 'Наразі немає списків, які можна переглянути.';
+$labels['mailman_archives'] = 'Архіви';
+$labels['mailman_subscribe'] = 'Підписатися';
+$labels['mailman_unsubscribe'] = 'Відмовитися від підписки';
+$labels['mailman_send_to_list'] = 'Надіслати до списку';
+$labels['mailman_actions_unavailable'] = 'Дії зі списком наразі недоступні.';
+$labels['mailman_status_ok'] = 'Поштар може бути на зв\'язку.';
+$labels['mailman_status_degraded'] = 'Поштовик недоступний. Дії читання та запису обмежені.';
+$labels['mailman_not_configured'] = 'Інтеграція з Mailman не налаштована.';
+$labels['mailman_subscribe_success'] = 'Запит на підписку завершено.';
+$labels['mailman_subscribe_failed'] = 'Не вдалося підписатися на цей список.';
+$labels['mailman_subscribe_unavailable'] = 'Підписки відключені або наразі недоступні.';
+$labels['mailman_unsubscribe_success'] = 'Відписався від розсилки.';
+$labels['mailman_unsubscribe_failed'] = 'Неможливо відписатися від цього списку.';
+$labels['mailman_unsubscribe_unavailable'] = 'Дії відписки відключені або наразі недоступні.';
+$labels['mailman_no_identity'] = 'Особистість відправника не знайдено.';
+$labels['mailman_compose_widget_empty'] = 'Немає розпізнаних одержувачів списку Mailman.';
+$labels['mailman_detection_disabled'] = 'Вимкнено визначення складу поштової скриньки.';
+$labels['invalidrequest'] = 'Неправильний запит.';
+$labels['mailman_template_none'] = 'Без шаблону';
+$labels['mailman_owner_tools_title'] = 'Перелічіть варіанти надсилання';
+$labels['mailman_owner_target_prefix'] = 'Відправляю:';
+$labels['mailman_owner_option_require_subject'] = 'Вимагайте тему перед відправкою';
+$labels['mailman_owner_option_confirm_send'] = 'Показувати підтвердження перед відправкою';
+$labels['mailman_owner_option_append_footer'] = 'Додати нижній колонтитул відписки';
+$labels['mailman_owner_preflight_missing_subject'] = 'Будь ласка, додайте тему перед відправкою до списку.';
+$labels['mailman_owner_preflight_confirm_send'] = 'Надіслати це повідомлення вибраним одержувачам зі списку?';
+?>
