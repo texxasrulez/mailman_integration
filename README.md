@@ -41,6 +41,11 @@ Intentionally excluded from v1:
 - PHP 7.4 or later
 - Mailman 3 with the REST API enabled and reachable from the web server
 
+**Screenshot**
+-----------
+
+![Alt text](/images/screenshot.png?raw=true "Screenshot")
+
 ## Installation
 
 ### Via Composer (recommended)
