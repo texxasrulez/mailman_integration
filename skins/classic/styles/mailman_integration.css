@@ -1,14 +1,3 @@
-/* Taskbar icon */
-#taskbar a.button-mailman span.button-inner {
-  background: url(../images/mailman.png) 0 0 no-repeat;
-  height: 19px;
-}
-
-#taskbar a.button-mailman:hover span.button-inner,
-#taskbar a.button-mailman.button-selected span.button-inner {
-  background: url(../images/mailman-hover.png) 0 0 no-repeat;
-  height: 19px;
-}
 :root {
   --mailman-page-padding: 16px;
   --mailman-layout-gap: 16px;

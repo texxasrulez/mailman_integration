@@ -41,11 +41,6 @@ Intentionally excluded from v1:
 - PHP 7.4 or later
 - Mailman 3 with the REST API enabled and reachable from the web server
 
-**Screenshot**
------------
-
-![Alt text](/images/screenshot.png?raw=true "Screenshot")
-
 ## Installation
 
 ### Via Composer (recommended)
@@ -88,6 +83,7 @@ Copy `config.inc.php.dist` to `config.inc.php` in the plugin directory to get st
 | `mailman_integration_api_password` | — | REST API password |
 | `mailman_integration_timeout` | `8` | API request timeout in seconds |
 | `mailman_integration_tls_verify` | `true` | Verify TLS certificates; disable only for internal deployments |
+| `mailman_integration_postorius_url` | `''` | Optional Postorius URL used to link the word `Mailman` in the health status line |
 | `mailman_integration_health_path` | `/system` | Path used to probe Mailman health |
 | `mailman_integration_health_fallback_path` | `/lists` | Fallback probe path if the primary returns an error |
 

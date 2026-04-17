@@ -2,7 +2,7 @@
 
 class mailman_integration extends rcube_plugin
 {
-    const PLUGIN_VERSION = '1.0.0';
+    const PLUGIN_VERSION = '1.0.1';
     const PLUGIN_INFO = array(
         'name' => 'mailman_integration',
         'vendor' => 'Gene Hawkins',
@@ -45,8 +45,8 @@ class mailman_integration extends rcube_plugin
         $ui = new MailmanUi($this->rc, $service, $guard, $mapper, $this);
         $this->ui = $ui;
 
-        $this->include_script('js/mailman_integration.js?v=' . $this->asset_version());
-        $this->include_script('js/mailman_compose.js?v=' . $this->asset_version());
+        $this->include_script($this->resolve_web_asset_path('js/mailman_integration.js') . '?v=' . $this->asset_version());
+        $this->include_script($this->resolve_web_asset_path('js/mailman_compose.js') . '?v=' . $this->asset_version());
 
         $this->register_action('mailman', [$this, 'action_lists']);
         $this->register_action('mailman-subscribe', [$this, 'action_subscribe']);
@@ -283,8 +283,8 @@ CSS;
         $skinCss = $this->skin_css_path();
 
         $files = [
-            $this->home . '/js/mailman_integration.js',
-            $this->home . '/js/mailman_compose.js',
+            $this->asset_full_path('js/mailman_integration.js'),
+            $this->asset_full_path('js/mailman_compose.js'),
             $this->home . '/lib/MailmanService.php',
             $this->home . '/' . ltrim($skinCss, '/'),
         ];
@@ -302,24 +302,6 @@ CSS;
 
     private function skin_css_path()
     {
-        $candidates = [];
-        $activeSkin = $this->resolve_active_skin_name();
-
-        if (!empty($activeSkin)) {
-            $candidates[] = 'skins/' . $activeSkin . '/styles/mailman_integration.css';
-        }
-
-        $localCandidate = rtrim($this->local_skin_path(), '/') . '/styles/mailman_integration.css';
-        if (!empty($localCandidate)) {
-            $candidates[] = $localCandidate;
-        }
-
-        foreach (array_values(array_unique($candidates)) as $candidate) {
-            if (is_file($this->home . '/' . ltrim($candidate, '/'))) {
-                return $candidate;
-            }
-        }
-
         return $this->resolve_skin_asset('styles/mailman_integration.css');
     }
 
@@ -477,6 +459,7 @@ CSS;
             'cache_ttl' => (int) $this->rc->config->get('mailman_integration_cache_ttl', 120),
             'log_level' => (string) $this->rc->config->get('mailman_integration_log_level', 'warning'),
             'debug' => (bool) $this->rc->config->get('mailman_integration_debug', false),
+            'postorius_url' => (string) $this->rc->config->get('mailman_integration_postorius_url', ''),
             'health_path' => (string) $this->rc->config->get('mailman_integration_health_path', '/system'),
             'health_fallback_path' => (string) $this->rc->config->get('mailman_integration_health_fallback_path', '/lists'),
             'compose_detection' => (bool) $this->rc->config->get('mailman_integration_compose_detection', true),
@@ -529,26 +512,92 @@ CSS;
     private function resolve_skin_asset($path)
     {
         $skin = $this->resolve_active_skin_name();
+        $relativePath = ltrim($path, '/');
+        $candidate = 'skins/' . $skin . '/' . $relativePath;
 
-        $candidate = 'skins/' . $skin . '/' . ltrim($path, '/');
-        $full = $this->home . '/' . $candidate;
-
-        if (is_file($full)) {
-            return $candidate;
+        if ($this->asset_exists($candidate)) {
+            return $this->resolve_web_asset_path($candidate);
         }
 
         if (strpos($skin, '_larry') !== false) {
-            $fallback = 'skins/larry/' . ltrim($path, '/');
-            if (is_file($this->home . '/' . $fallback)) {
+            $fallback = 'skins/larry/' . $relativePath;
+            if ($this->asset_exists($fallback)) {
                 $this->debug_log('Skin asset fallback from ' . $candidate . ' to ' . $fallback);
-                return $fallback;
+                return $this->resolve_web_asset_path($fallback);
             }
         }
 
-        $elastic = 'skins/elastic/' . ltrim($path, '/');
+        $elastic = 'skins/elastic/' . $relativePath;
         $this->debug_log('Skin asset fallback from ' . $candidate . ' to ' . $elastic);
 
-        return $elastic;
+        return $this->resolve_web_asset_path($elastic);
+    }
+
+    private function resolve_web_asset_path($path)
+    {
+        $path = ltrim((string) $path, '/');
+
+        return $path;
+    }
+
+    private function asset_full_path($path)
+    {
+        return $this->home . '/' . ltrim((string) $path, '/');
+    }
+
+    private function asset_exists($path)
+    {
+        return is_file($this->home . '/' . ltrim((string) $path, '/'));
+    }
+
+    private function asset_url($path)
+    {
+        $path = ltrim((string) $path, '/');
+        $url = '';
+
+        if (method_exists($this, 'url')) {
+            $url = (string) $this->url($path);
+        } else {
+            $url = './plugins/' . $this->ID . '/' . $path;
+        }
+
+        if (preg_match('/^(?:[a-z][a-z0-9+.-]*:|\\/)/i', $url)) {
+            return $url;
+        }
+
+        if ($this->rc && isset($this->rc->output) && method_exists($this->rc->output, 'abs_url')) {
+            return (string) $this->rc->output->abs_url($url);
+        }
+
+        return $url;
+    }
+
+    private function asset_data_url($path)
+    {
+        $relative = ltrim((string) $path, '/');
+        $fullPath = $this->home . '/' . $relative;
+
+        if (!is_readable($fullPath)) {
+            return $this->asset_url($relative);
+        }
+
+        $contents = @file_get_contents($fullPath);
+
+        if (!is_string($contents) || $contents === '') {
+            return $this->asset_url($relative);
+        }
+
+        $extension = strtolower((string) pathinfo($fullPath, PATHINFO_EXTENSION));
+
+        if ($extension === 'svg') {
+            return 'data:image/svg+xml;charset=UTF-8,' . rawurlencode($contents);
+        }
+
+        if ($extension === 'png') {
+            return 'data:image/png;base64,' . base64_encode($contents);
+        }
+
+        return $this->asset_url($relative);
     }
 
     private function debug_log($message)
@@ -566,12 +615,16 @@ CSS;
             return;
         }
 
+        if ($this->resolve_active_skin_name() === 'classic') {
+            return;
+        }
+
         $skinCss = $this->skin_css_path();
         $isElastic = strpos($skinCss, 'skins/elastic/') === 0;
 
         if ($isElastic) {
-            $icon = rcube::Q($this->url($this->resolve_skin_asset('images/mailman.svg')));
-            $iconHover = rcube::Q($this->url($this->resolve_skin_asset('images/mailman-hover.svg')));
+            $icon = rcube::Q($this->asset_data_url($this->resolve_skin_asset('images/mailman.svg')));
+            $iconHover = rcube::Q($this->asset_data_url($this->resolve_skin_asset('images/mailman-hover.svg')));
 
             $css = <<<CSS
 #taskmenu a.button-mailman:before,
@@ -605,8 +658,8 @@ CSS;
 }
 CSS;
         } else {
-            $icon = rcube::Q($this->url($this->resolve_skin_asset('images/mailman.png')));
-            $iconHover = rcube::Q($this->url($this->resolve_skin_asset('images/mailman-hover.png')));
+            $icon = rcube::Q($this->asset_data_url($this->resolve_skin_asset('images/mailman.png')));
+            $iconHover = rcube::Q($this->asset_data_url($this->resolve_skin_asset('images/mailman-hover.png')));
 
             $css = <<<CSS
 #taskbar a.button-mailman span.button-inner,

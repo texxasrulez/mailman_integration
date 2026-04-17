@@ -21,6 +21,7 @@ $config['mailman_integration_exposed_domains'] = [];
 $config['mailman_integration_cache_ttl'] = 120;
 $config['mailman_integration_log_level'] = 'warning';
 $config['mailman_integration_debug'] = false;
+$config['mailman_integration_postorius_url'] = '';
 $config['mailman_integration_health_path'] = '/system';
 $config['mailman_integration_health_fallback_path'] = '/lists';
 

@@ -117,10 +117,15 @@ class MailmanUi
         // Remove "skin-" prefix if present
         $activeSkin = preg_replace('/^skin-/', '', (string) $activeSkin);
 
-        // Pick colors for this skin, fallback to larry defaults
-        $colors = $skinColors[$activeSkin] ?? $skinColors['larry'];
-        $activeBg = $colors['bg'];
-        $activeBorder = $colors['border'];
+        // Keep larry variants pinned to explicit colors, but let elastic follow skin CSS vars.
+        if ($activeSkin === 'elastic') {
+          $activeBg = 'var(--mailman-item-active-bg, #e9f3ff)';
+          $activeBorder = 'var(--mailman-item-active-border, #8fb0dd)';
+        } else {
+          $colors = $skinColors[$activeSkin] ?? $skinColors['larry'];
+          $activeBg = $colors['bg'];
+          $activeBorder = $colors['border'];
+        }
 
         $css = <<<CSS
 .mailman-page {
@@ -324,13 +329,162 @@ class MailmanUi
 }
 CSS;
 
+        if ($activeSkin === 'elastic') {
+            $css .= <<<'CSS'
+html.dark-mode .mailman-page,
+html.theme-dark .mailman-page,
+html[data-theme="dark"] .mailman-page,
+html[data-color-scheme="dark"] .mailman-page,
+body.dark-mode .mailman-page,
+body.theme-dark .mailman-page,
+body[data-theme="dark"] .mailman-page,
+body[data-color-scheme="dark"] .mailman-page {
+  color: #d5e0ef;
+}
+
+html.dark-mode .mailman-scrollpane,
+html.theme-dark .mailman-scrollpane,
+html[data-theme="dark"] .mailman-scrollpane,
+html[data-color-scheme="dark"] .mailman-scrollpane,
+body.dark-mode .mailman-scrollpane,
+body.theme-dark .mailman-scrollpane,
+body[data-theme="dark"] .mailman-scrollpane,
+body[data-color-scheme="dark"] .mailman-scrollpane {
+  background: #171e27 !important;
+  border-color: #2f3f52 !important;
+}
+
+html.dark-mode .mailman-status,
+html.dark-mode .mailman-panel,
+html.dark-mode .mailman-detail,
+html.dark-mode .mailman-compose-widget,
+html.theme-dark .mailman-status,
+html.theme-dark .mailman-panel,
+html.theme-dark .mailman-detail,
+html.theme-dark .mailman-compose-widget,
+html[data-theme="dark"] .mailman-status,
+html[data-theme="dark"] .mailman-panel,
+html[data-theme="dark"] .mailman-detail,
+html[data-theme="dark"] .mailman-compose-widget,
+html[data-color-scheme="dark"] .mailman-status,
+html[data-color-scheme="dark"] .mailman-panel,
+html[data-color-scheme="dark"] .mailman-detail,
+html[data-color-scheme="dark"] .mailman-compose-widget,
+body.dark-mode .mailman-status,
+body.dark-mode .mailman-panel,
+body.dark-mode .mailman-detail,
+body.dark-mode .mailman-compose-widget,
+body.theme-dark .mailman-status,
+body.theme-dark .mailman-panel,
+body.theme-dark .mailman-detail,
+body.theme-dark .mailman-compose-widget,
+body[data-theme="dark"] .mailman-status,
+body[data-theme="dark"] .mailman-panel,
+body[data-theme="dark"] .mailman-detail,
+body[data-theme="dark"] .mailman-compose-widget,
+body[data-color-scheme="dark"] .mailman-status,
+body[data-color-scheme="dark"] .mailman-panel,
+body[data-color-scheme="dark"] .mailman-detail,
+body[data-color-scheme="dark"] .mailman-compose-widget {
+  background: #1c2530 !important;
+  border-color: #324154 !important;
+}
+
+html.dark-mode .mailman-list-item,
+html.theme-dark .mailman-list-item,
+html[data-theme="dark"] .mailman-list-item,
+html[data-color-scheme="dark"] .mailman-list-item,
+body.dark-mode .mailman-list-item,
+body.theme-dark .mailman-list-item,
+body[data-theme="dark"] .mailman-list-item,
+body[data-color-scheme="dark"] .mailman-list-item {
+  border-color: #3a4a60 !important;
+}
+
+html.dark-mode .mailman-list-item.selected,
+html.dark-mode .mailman-list-item:hover,
+html.dark-mode .mailman-list-item:focus,
+html.theme-dark .mailman-list-item.selected,
+html.theme-dark .mailman-list-item:hover,
+html.theme-dark .mailman-list-item:focus,
+html[data-theme="dark"] .mailman-list-item.selected,
+html[data-theme="dark"] .mailman-list-item:hover,
+html[data-theme="dark"] .mailman-list-item:focus,
+html[data-color-scheme="dark"] .mailman-list-item.selected,
+html[data-color-scheme="dark"] .mailman-list-item:hover,
+html[data-color-scheme="dark"] .mailman-list-item:focus,
+body.dark-mode .mailman-list-item.selected,
+body.dark-mode .mailman-list-item:hover,
+body.dark-mode .mailman-list-item:focus,
+body.theme-dark .mailman-list-item.selected,
+body.theme-dark .mailman-list-item:hover,
+body.theme-dark .mailman-list-item:focus,
+body[data-theme="dark"] .mailman-list-item.selected,
+body[data-theme="dark"] .mailman-list-item:hover,
+body[data-theme="dark"] .mailman-list-item:focus,
+body[data-color-scheme="dark"] .mailman-list-item.selected,
+body[data-color-scheme="dark"] .mailman-list-item:hover,
+body[data-color-scheme="dark"] .mailman-list-item:focus {
+  background: #23384f !important;
+  border-color: #5d87b8 !important;
+}
+
+html.dark-mode .mailman-list-item__address,
+html.dark-mode .mailman-detail__address,
+html.dark-mode .mailman-empty-state,
+html.dark-mode .mailman-list-empty,
+html.dark-mode .mailman-actions__note,
+html.theme-dark .mailman-list-item__address,
+html.theme-dark .mailman-detail__address,
+html.theme-dark .mailman-empty-state,
+html.theme-dark .mailman-list-empty,
+html.theme-dark .mailman-actions__note,
+html[data-theme="dark"] .mailman-list-item__address,
+html[data-theme="dark"] .mailman-detail__address,
+html[data-theme="dark"] .mailman-empty-state,
+html[data-theme="dark"] .mailman-list-empty,
+html[data-theme="dark"] .mailman-actions__note,
+html[data-color-scheme="dark"] .mailman-list-item__address,
+html[data-color-scheme="dark"] .mailman-detail__address,
+html[data-color-scheme="dark"] .mailman-empty-state,
+html[data-color-scheme="dark"] .mailman-list-empty,
+html[data-color-scheme="dark"] .mailman-actions__note,
+body.dark-mode .mailman-list-item__address,
+body.dark-mode .mailman-detail__address,
+body.dark-mode .mailman-empty-state,
+body.dark-mode .mailman-list-empty,
+body.dark-mode .mailman-actions__note,
+body.theme-dark .mailman-list-item__address,
+body.theme-dark .mailman-detail__address,
+body.theme-dark .mailman-empty-state,
+body.theme-dark .mailman-list-empty,
+body.theme-dark .mailman-actions__note,
+body[data-theme="dark"] .mailman-list-item__address,
+body[data-theme="dark"] .mailman-detail__address,
+body[data-theme="dark"] .mailman-empty-state,
+body[data-theme="dark"] .mailman-list-empty,
+body[data-theme="dark"] .mailman-actions__note,
+body[data-color-scheme="dark"] .mailman-list-item__address,
+body[data-color-scheme="dark"] .mailman-detail__address,
+body[data-color-scheme="dark"] .mailman-empty-state,
+body[data-color-scheme="dark"] .mailman-list-empty,
+body[data-color-scheme="dark"] .mailman-actions__note {
+  color: #a5b5cb !important;
+}
+CSS;
+        }
+
         return html::tag('style', ['type' => 'text/css'], $css);
     }
 
     private function renderSidebar(array $data, $selected)
     {
         $parts = [];
-        $parts[] = html::tag('div', ['class' => 'mailman-status ' . ($data['health']['ok'] ? 'is-ok' : 'is-degraded')], $this->plugin->gettext($data['health']['message']));
+      $parts[] = html::tag(
+        'div',
+        ['class' => 'mailman-status ' . ($data['health']['ok'] ? 'is-ok' : 'is-degraded')],
+        $this->renderHealthStatus($data['health'])
+      );
         if (!empty($data['debug_enabled']) && !empty($data['debug_entries'])) {
             $parts[] = $this->renderDebugPanel($data['debug_entries']);
         }
@@ -342,6 +496,32 @@ CSS;
 
         return implode('', $parts);
     }
+
+  private function renderHealthStatus(array $health)
+  {
+    $message = (string) $this->plugin->gettext($health['message']);
+
+    if (empty($health['ok']) || $health['message'] !== 'mailman_status_ok') {
+      return rcube::Q($message);
+    }
+
+    $url = trim((string) $this->plugin->rc->config->get('mailman_integration_postorius_url', ''));
+    if ($url === '' || !preg_match('/^https?:\/\//i', $url) || !filter_var($url, FILTER_VALIDATE_URL)) {
+      return rcube::Q($message);
+    }
+
+    if (strpos($message, 'Mailman') === false) {
+      return rcube::Q($message);
+    }
+
+    $link = html::a([
+      'href' => $url,
+      'target' => '_blank',
+      'rel' => 'noopener noreferrer',
+    ], 'Mailman');
+
+    return preg_replace('/Mailman/', $link, $message, 1);
+  }
 
     private function renderDetail(array $data)
     {
