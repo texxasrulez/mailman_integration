@@ -2,7 +2,7 @@
 
 class mailman_integration extends rcube_plugin
 {
-    const PLUGIN_VERSION = '1.0.1';
+    const PLUGIN_VERSION = '1.0.1+dev';
     const PLUGIN_INFO = array(
         'name' => 'mailman_integration',
         'vendor' => 'Gene Hawkins',
@@ -133,8 +133,7 @@ class mailman_integration extends rcube_plugin
             $activeSkinName = $this->resolve_active_skin_name();
             $this->debug_log('Startup: active_skin=' . $activeSkinName . ', css_path=' . $cssPath);
             
-            $this->include_stylesheet($cssPath . '?v=' . $this->asset_version());
-            $this->inject_taskbar_icon_css();
+            $this->include_stylesheet($cssPath);
         }
 
         if ($args['task'] === 'mailman' && empty($args['action'])) {
@@ -550,56 +549,6 @@ CSS;
         return is_file($this->home . '/' . ltrim((string) $path, '/'));
     }
 
-    private function asset_url($path)
-    {
-        $path = ltrim((string) $path, '/');
-        $url = '';
-
-        if (method_exists($this, 'url')) {
-            $url = (string) $this->url($path);
-        } else {
-            $url = './plugins/' . $this->ID . '/' . $path;
-        }
-
-        if (preg_match('/^(?:[a-z][a-z0-9+.-]*:|\\/)/i', $url)) {
-            return $url;
-        }
-
-        if ($this->rc && isset($this->rc->output) && method_exists($this->rc->output, 'abs_url')) {
-            return (string) $this->rc->output->abs_url($url);
-        }
-
-        return $url;
-    }
-
-    private function asset_data_url($path)
-    {
-        $relative = ltrim((string) $path, '/');
-        $fullPath = $this->home . '/' . $relative;
-
-        if (!is_readable($fullPath)) {
-            return $this->asset_url($relative);
-        }
-
-        $contents = @file_get_contents($fullPath);
-
-        if (!is_string($contents) || $contents === '') {
-            return $this->asset_url($relative);
-        }
-
-        $extension = strtolower((string) pathinfo($fullPath, PATHINFO_EXTENSION));
-
-        if ($extension === 'svg') {
-            return 'data:image/svg+xml;charset=UTF-8,' . rawurlencode($contents);
-        }
-
-        if ($extension === 'png') {
-            return 'data:image/png;base64,' . base64_encode($contents);
-        }
-
-        return $this->asset_url($relative);
-    }
-
     private function debug_log($message)
     {
         if (!$this->rc->config->get('mailman_integration_debug', false)) {
@@ -607,88 +556,5 @@ CSS;
         }
 
         rcube::write_log('mailman_integration', (string) $message);
-    }
-
-    private function inject_taskbar_icon_css()
-    {
-        if ($this->rc->output->type !== 'html' || !method_exists($this->rc->output, 'add_header')) {
-            return;
-        }
-
-        if ($this->resolve_active_skin_name() === 'classic') {
-            return;
-        }
-
-        $skinCss = $this->skin_css_path();
-        $isElastic = strpos($skinCss, 'skins/elastic/') === 0;
-
-        if ($isElastic) {
-            $icon = rcube::Q($this->asset_data_url($this->resolve_skin_asset('images/mailman.svg')));
-            $iconHover = rcube::Q($this->asset_data_url($this->resolve_skin_asset('images/mailman-hover.svg')));
-
-            $css = <<<CSS
-#taskmenu a.button-mailman:before,
-#taskmenu a.mailman:before,
-#taskbar a.button-mailman:before,
-#taskbar a.mailman:before {
-    content: " " !important;
-    display: block !important;
-    width: 1.6rem !important;
-    height: 1.6rem !important;
-    margin: 0 auto 0.2rem !important;
-    float: none !important;
-    background: url('{$icon}') center center no-repeat !important;
-    background-size: contain !important;
-    font-size: 0 !important;
-}
-
-#taskmenu a.button-mailman:hover:before,
-#taskmenu a.button-mailman.selected:before,
-#taskmenu a.button-mailman.button-selected:before,
-#taskmenu a.mailman:hover:before,
-#taskmenu a.mailman.selected:before,
-#taskmenu a.mailman.button-selected:before,
-#taskbar a.button-mailman:hover:before,
-#taskbar a.button-mailman.selected:before,
-#taskbar a.button-mailman.button-selected:before,
-#taskbar a.mailman:hover:before,
-#taskbar a.mailman.selected:before,
-#taskbar a.mailman.button-selected:before {
-    background-image: url('{$iconHover}') !important;
-}
-CSS;
-        } else {
-            $icon = rcube::Q($this->asset_data_url($this->resolve_skin_asset('images/mailman.png')));
-            $iconHover = rcube::Q($this->asset_data_url($this->resolve_skin_asset('images/mailman-hover.png')));
-
-            $css = <<<CSS
-#taskbar a.button-mailman span.button-inner,
-#taskbar a.button-mailman span.inner,
-#taskbar a.mailman span.button-inner,
-#taskbar a.mailman span.inner {
-    background: url('{$icon}') 0 0 no-repeat !important;
-    display: inline-block !important;
-    height: 19px !important;
-}
-
-#taskbar a.button-mailman:hover span.button-inner,
-#taskbar a.button-mailman.button-selected span.button-inner,
-#taskbar a.button-mailman.selected span.button-inner,
-#taskbar a.button-mailman:hover span.inner,
-#taskbar a.button-mailman.button-selected span.inner,
-#taskbar a.button-mailman.selected span.inner,
-#taskbar a.mailman:hover span.button-inner,
-#taskbar a.mailman.button-selected span.button-inner,
-#taskbar a.mailman.selected span.button-inner,
-#taskbar a.mailman:hover span.inner,
-#taskbar a.mailman.button-selected span.inner,
-#taskbar a.mailman.selected span.inner {
-    background: url('{$iconHover}') 0 0 no-repeat !important;
-    height: 19px !important;
-}
-CSS;
-        }
-
-        $this->rc->output->add_header(html::tag('style', ['type' => 'text/css'], $css));
     }
 }

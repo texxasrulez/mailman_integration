@@ -1,3 +1,28 @@
+#taskbar a.button-mailman span.button-inner,
+#taskbar a.button-mailman span.inner,
+#taskbar a.mailman span.button-inner,
+#taskbar a.mailman span.inner {
+  background: url(../images/mailman.png) 0 0 no-repeat;
+  display: inline-block;
+  height: 19px;
+}
+
+#taskbar a.button-mailman:hover span.button-inner,
+#taskbar a.button-mailman.button-selected span.button-inner,
+#taskbar a.button-mailman.selected span.button-inner,
+#taskbar a.button-mailman:hover span.inner,
+#taskbar a.button-mailman.button-selected span.inner,
+#taskbar a.button-mailman.selected span.inner,
+#taskbar a.mailman:hover span.button-inner,
+#taskbar a.mailman.button-selected span.button-inner,
+#taskbar a.mailman.selected span.button-inner,
+#taskbar a.mailman:hover span.inner,
+#taskbar a.mailman.button-selected span.inner,
+#taskbar a.mailman.selected span.inner {
+  background: url(../images/mailman-hover.png) 0 0 no-repeat;
+  height: 19px;
+}
+
 :root {
   --mailman-page-padding: 16px;
   --mailman-layout-gap: 16px;
@@ -8,7 +33,7 @@
   --mailman-scroll-min-height: 420px;
   --mailman-scroll-padding: 14px;
 
-  --mailman-surface-bg: #fdf6f3;
+  --mailman-surface-bg: #f3f3f3;
   --mailman-surface-border: #b9b9c0;
   --mailman-panel-bg: #e5e5e5;
   --mailman-panel-border: #9d9da5;

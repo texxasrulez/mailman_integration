@@ -56,8 +56,7 @@ class MailmanUi
             )
         );
 
-        return $this->renderInlineStyles()
-          . html::tag('div', ['class' => 'mailman-page'], $layout);
+        return html::tag('div', ['class' => 'mailman-page'], $layout);
     }
 
     public function getComposeWidgetMarkup()

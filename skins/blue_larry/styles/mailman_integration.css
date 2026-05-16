@@ -1,3 +1,28 @@
+#taskbar a.button-mailman span.button-inner,
+#taskbar a.button-mailman span.inner,
+#taskbar a.mailman span.button-inner,
+#taskbar a.mailman span.inner {
+  background: url(../images/mailman.png) 0 0 no-repeat;
+  display: inline-block;
+  height: 19px;
+}
+
+#taskbar a.button-mailman:hover span.button-inner,
+#taskbar a.button-mailman.button-selected span.button-inner,
+#taskbar a.button-mailman.selected span.button-inner,
+#taskbar a.button-mailman:hover span.inner,
+#taskbar a.button-mailman.button-selected span.inner,
+#taskbar a.button-mailman.selected span.inner,
+#taskbar a.mailman:hover span.button-inner,
+#taskbar a.mailman.button-selected span.button-inner,
+#taskbar a.mailman.selected span.button-inner,
+#taskbar a.mailman:hover span.inner,
+#taskbar a.mailman.button-selected span.inner,
+#taskbar a.mailman.selected span.inner {
+  background: url(../images/mailman-hover.png) 0 0 no-repeat;
+  height: 19px;
+}
+
 :root {
   --mailman-page-padding: 16px;
   --mailman-layout-gap: 16px;
@@ -8,7 +33,7 @@
   --mailman-scroll-min-height: 420px;
   --mailman-scroll-padding: 14px;
 
-  --mailman-surface-bg: #f6fbfc;
+  --mailman-surface-bg: #eaf2f5;
   --mailman-surface-border: #9eb7c6;
   --mailman-panel-bg: #deeff5;
   --mailman-panel-border: #7fa2b7;
@@ -21,7 +46,7 @@
   --mailman-item-padding-x: 12px;
   --mailman-item-gap: 8px;
   --mailman-item-border: #9eb7c6;
-  --mailman-item-active-bg: #d9ecf4;
+  --mailman-item-active-bg: #c8e8f5;
   --mailman-item-active-border: #265576;
 
   --mailman-muted-text: #152f40;

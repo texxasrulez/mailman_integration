@@ -3,30 +3,16 @@
 #taskmenu a.mailman:before,
 #taskbar a.button-mailman:before,
 #taskbar a.mailman:before {
-  content: " ";
-  display: block;
-  width: 1.6rem;
-  height: 1.6rem;
-  margin: 0 auto 0.2rem;
-  float: none;
-  background: url(../images/mailman.svg) center center no-repeat;
-  background-size: contain;
-  font-size: 0;
-}
-
-#taskmenu a.button-mailman:hover:before,
-#taskmenu a.mailman:hover:before,
-#taskmenu a.button-mailman.selected:before,
-#taskmenu a.mailman.selected:before,
-#taskmenu a.button-mailman.button-selected:before,
-#taskmenu a.mailman.button-selected:before,
-#taskbar a.button-mailman:hover:before,
-#taskbar a.mailman:hover:before,
-#taskbar a.button-mailman.selected:before,
-#taskbar a.mailman.selected:before,
-#taskbar a.button-mailman.button-selected:before,
-#taskbar a.mailman.button-selected:before {
-  background-image: url(../images/mailman-hover.svg);
+  content: "\f0e0";
+  font-family: "Icons";
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: inherit;
+  background: none;
+  speak: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 :root {
   color-scheme: light;
@@ -68,8 +54,6 @@
   --mailman-degraded-border: #e1bf68;
 }
 
-html.dark,
-body.dark,
 html.dark-mode,
 body.dark-mode,
 html.theme-dark,
@@ -95,132 +79,31 @@ body[data-color-scheme="dark"] {
   --mailman-degraded-border: #9d7d3a;
 }
 
-html.dark #layout-content .mailman-scrollpane,
-body.dark #layout-content .mailman-scrollpane,
-html.dark-mode #layout-content .mailman-scrollpane,
-body.dark-mode #layout-content .mailman-scrollpane,
-html.theme-dark #layout-content .mailman-scrollpane,
-body.theme-dark #layout-content .mailman-scrollpane,
-html[data-theme="dark"] #layout-content .mailman-scrollpane,
-body[data-theme="dark"] #layout-content .mailman-scrollpane,
-html[data-color-scheme="dark"] #layout-content .mailman-scrollpane,
-body[data-color-scheme="dark"] #layout-content .mailman-scrollpane,
-html.dark .mailman-scrollpane,
-body.dark .mailman-scrollpane,
-html.dark-mode .mailman-scrollpane,
-body.dark-mode .mailman-scrollpane,
-html.theme-dark .mailman-scrollpane,
-body.theme-dark .mailman-scrollpane,
-html[data-theme="dark"] .mailman-scrollpane,
-body[data-theme="dark"] .mailman-scrollpane,
-html[data-color-scheme="dark"] .mailman-scrollpane,
-body[data-color-scheme="dark"] .mailman-scrollpane {
-  background: #171e27;
-  border-color: #2f3f52;
-}
+html.light,
+body.light,
+html.light-mode,
+body.light-mode,
+html.theme-light,
+body.theme-light,
+html[data-theme="light"],
+body[data-theme="light"],
+html[data-color-scheme="light"],
+body[data-color-scheme="light"] {
+  color-scheme: light;
 
-html.dark #layout-content .mailman-status,
-html.dark #layout-content .mailman-panel,
-html.dark #layout-content .mailman-detail,
-html.dark #layout-content .mailman-compose-widget,
-body.dark #layout-content .mailman-status,
-body.dark #layout-content .mailman-panel,
-body.dark #layout-content .mailman-detail,
-body.dark #layout-content .mailman-compose-widget,
-html.dark-mode #layout-content .mailman-status,
-html.dark-mode #layout-content .mailman-panel,
-html.dark-mode #layout-content .mailman-detail,
-html.dark-mode #layout-content .mailman-compose-widget,
-body.dark-mode #layout-content .mailman-status,
-body.dark-mode #layout-content .mailman-panel,
-body.dark-mode #layout-content .mailman-detail,
-body.dark-mode #layout-content .mailman-compose-widget,
-html.theme-dark #layout-content .mailman-status,
-html.theme-dark #layout-content .mailman-panel,
-html.theme-dark #layout-content .mailman-detail,
-html.theme-dark #layout-content .mailman-compose-widget,
-body.theme-dark #layout-content .mailman-status,
-body.theme-dark #layout-content .mailman-panel,
-body.theme-dark #layout-content .mailman-detail,
-body.theme-dark #layout-content .mailman-compose-widget,
-html[data-theme="dark"] #layout-content .mailman-status,
-html[data-theme="dark"] #layout-content .mailman-panel,
-html[data-theme="dark"] #layout-content .mailman-detail,
-html[data-theme="dark"] #layout-content .mailman-compose-widget,
-body[data-theme="dark"] #layout-content .mailman-status,
-body[data-theme="dark"] #layout-content .mailman-panel,
-body[data-theme="dark"] #layout-content .mailman-detail,
-body[data-theme="dark"] #layout-content .mailman-compose-widget,
-html[data-color-scheme="dark"] #layout-content .mailman-status,
-html[data-color-scheme="dark"] #layout-content .mailman-panel,
-html[data-color-scheme="dark"] #layout-content .mailman-detail,
-html[data-color-scheme="dark"] #layout-content .mailman-compose-widget,
-body[data-color-scheme="dark"] #layout-content .mailman-status,
-body[data-color-scheme="dark"] #layout-content .mailman-panel,
-body[data-color-scheme="dark"] #layout-content .mailman-detail,
-body[data-color-scheme="dark"] #layout-content .mailman-compose-widget,
-html.dark .mailman-status,
-html.dark .mailman-panel,
-html.dark .mailman-detail,
-html.dark .mailman-compose-widget,
-body.dark .mailman-status,
-body.dark .mailman-panel,
-body.dark .mailman-detail,
-body.dark .mailman-compose-widget,
-html.dark-mode .mailman-status,
-html.dark-mode .mailman-panel,
-html.dark-mode .mailman-detail,
-html.dark-mode .mailman-compose-widget,
-body.dark-mode .mailman-status,
-body.dark-mode .mailman-panel,
-body.dark-mode .mailman-detail,
-body.dark-mode .mailman-compose-widget,
-html.theme-dark .mailman-status,
-html.theme-dark .mailman-panel,
-html.theme-dark .mailman-detail,
-html.theme-dark .mailman-compose-widget,
-body.theme-dark .mailman-status,
-body.theme-dark .mailman-panel,
-body.theme-dark .mailman-detail,
-body.theme-dark .mailman-compose-widget,
-html[data-theme="dark"] .mailman-status,
-html[data-theme="dark"] .mailman-panel,
-html[data-theme="dark"] .mailman-detail,
-html[data-theme="dark"] .mailman-compose-widget,
-body[data-theme="dark"] .mailman-status,
-body[data-theme="dark"] .mailman-panel,
-body[data-theme="dark"] .mailman-detail,
-body[data-theme="dark"] .mailman-compose-widget,
-html[data-color-scheme="dark"] .mailman-status,
-html[data-color-scheme="dark"] .mailman-panel,
-html[data-color-scheme="dark"] .mailman-detail,
-html[data-color-scheme="dark"] .mailman-compose-widget,
-body[data-color-scheme="dark"] .mailman-status,
-body[data-color-scheme="dark"] .mailman-panel,
-body[data-color-scheme="dark"] .mailman-detail,
-body[data-color-scheme="dark"] .mailman-compose-widget {
-  background: #1c2530;
-  border-color: #324154;
-}
+  --mailman-surface-bg: #fcfdff;
+  --mailman-surface-border: #c8d3e1;
+  --mailman-panel-bg: #ffffff;
+  --mailman-panel-border: #d7e0eb;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
+  --mailman-item-border: #d5dee9;
+  --mailman-item-active-bg: #e9f3ff;
+  --mailman-item-active-border: #8fb0dd;
 
-    --mailman-surface-bg: #171e27;
-    --mailman-surface-border: #2f3f52;
-    --mailman-panel-bg: #1c2530;
-    --mailman-panel-border: #324154;
-
-    --mailman-item-border: #3a4a60;
-    --mailman-item-active-bg: #23384f;
-    --mailman-item-active-border: #5d87b8;
-
-    --mailman-muted-text: #a5b5cb;
-    --mailman-debug-bg: #141d28;
-    --mailman-degraded-bg: #3a2f17;
-    --mailman-degraded-border: #9d7d3a;
-  }
+  --mailman-muted-text: #5a6678;
+  --mailman-debug-bg: #f4f8fc;
+  --mailman-degraded-bg: #fff6e2;
+  --mailman-degraded-border: #e1bf68;
 }
 
 #layout-content .mailman-page,
